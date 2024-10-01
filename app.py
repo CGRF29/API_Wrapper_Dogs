@@ -1,47 +1,18 @@
 from flask import Flask, jsonify, request
 import requests
 import datetime
-import mysql.connector
+import logging
+from logging_config import setup_logging
+from controllers import insert_request_data
 
 app = Flask(__name__)
-
-# Configuración de la conexión a la base de datos MySQL
-db_config = {
-    'user': 'root',  # Cambia esto si tu usuario de MySQL es diferente
-    'password': 'password',  # Cambia por la contraseña de tu usuario
-    'host': 'localhost',
-    'port':3306,
-    'database': 'dog_api'
-}
-
-def insert_request_data(breed, image_url, response_code):
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
-
-        query = """
-        INSERT INTO requests (breed, image_url, request_timestamp, response_code)
-        VALUES (%s, %s, %s, %s)
-        """
-        timestamp = datetime.datetime.now()
-        values = (breed, image_url, timestamp, response_code)
-
-        cursor.execute(query, values)
-        conn.commit()
-        print(f"Data inserted: {breed}, {image_url}, {timestamp}, {response_code}")
-
-    except mysql.connector.Error as err:
-        print(f"Error: {err}")
-    
-    finally:
-        cursor.close()
-        conn.close()
+setup_logging()  # Configurar logging
 
 # Ruta para obtener una imagen de una raza de perro específica
 @app.route('/dog/breed/<breed_name>', methods=['GET'])
 def get_dog_image(breed_name):
     # Construir la URL de la API Dog CEO
-    api_url = f'https://dog.ceo/api/breed/{breed_name}/images/random'
+    api_url = f'https://dog.ceo/api/breed/{breed_name.lower()}/images/random'
 
     try:
         # Hacer la solicitud GET a la API externa
@@ -65,6 +36,7 @@ def get_dog_image(breed_name):
             }), 200
         else:
             # Manejar el caso donde la raza no es válida
+            logging.warning(f"Breed '{breed_name}' not found (404)")
             return jsonify({
                 'error': 'Invalid breed or breed not found',
                 'status': 'failure'
@@ -72,6 +44,7 @@ def get_dog_image(breed_name):
 
     except requests.exceptions.RequestException as e:
         # Manejar errores de conexión o fallos de la API
+        logging.error(f"Error connecting to Dog CEO API: {e}")
         return jsonify({
             'error': 'Error connecting to the Dog CEO API',
             'message': str(e),
