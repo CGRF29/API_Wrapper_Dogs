@@ -42,6 +42,15 @@ def get_dog_image(breed_name):
                 'status': 'failure'
             }), 404
 
+    except requests.exceptions.Timeout as timeout_err:
+        # Manejo de errores de tiempo de espera
+        logging.error(f"Timeout error occurred: {timeout_err}")
+        return jsonify({
+            'error': 'Request timed out',
+            'message': str(timeout_err),
+            'status': 'failure'
+        }), 500
+
     except requests.exceptions.RequestException as e:
         # Manejar errores de conexión o fallos de la API
         logging.error(f"Error connecting to Dog CEO API: {e}")
