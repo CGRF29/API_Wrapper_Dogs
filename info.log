@@ -1,0 +1,12 @@
+INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound-ibizan/n02091244_61.jpg, 200
+WARNING  root:app.py:39 Breed 'invalid_breed' not found (404)
+ERROR    root:app.py:47 Timeout error occurred: 
+INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound/image.jpg, 200
+2024-10-02 00:44:18,400 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-02 00:44:18,400 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-02 00:44:18,402 - INFO -  * Restarting with stat
+2024-10-02 00:44:18,944 - WARNING -  * Debugger is active!
+2024-10-02 00:44:18,948 - INFO -  * Debugger PIN: 764-210-081
+2024-10-02 00:45:14,772 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/dachshund-123503_640.jpg, 200
+2024-10-02 00:45:14,774 - INFO - 127.0.0.1 - - [02/Oct/2024 00:45:14] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
