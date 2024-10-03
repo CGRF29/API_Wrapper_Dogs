@@ -29,8 +29,17 @@ def insert_request_data(breed, image_url, response_code):
     try:
         with mysql.connector.connect(**db_config) as conn:
             with conn.cursor() as cursor:
-        #conn = mysql.connector.connect(**db_config)
-        #cursor = conn.cursor()
+
+                # Crear la tabla si no existe
+                cursor.execute("""
+                    CREATE TABLE IF NOT EXISTS requests (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        breed VARCHAR(50),
+                        image_url TEXT,
+                        request_timestamp DATETIME,
+                        response_code INT
+                    );
+                """)
 
                 query = """
                 INSERT INTO requests (breed, image_url, request_timestamp, response_code)

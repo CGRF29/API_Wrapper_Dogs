@@ -3,6 +3,7 @@ from app import app
 import requests
 import logging
 from app import setup_logging
+from unittest.mock import patch
 
 @pytest.fixture(scope='session', autouse=True)
 def configure_logging():
@@ -39,3 +40,12 @@ def test_get_dog_image_api_timeout(client, mocker):
     assert response.status_code == 500
     json_data = response.get_json()
     assert json_data['error'] == 'Request timed out'
+
+def test_get_dog_image_api_failure(client):
+    # Simular una excepción en la llamada a la API
+    with patch('requests.get', side_effect=requests.exceptions.RequestException("API request failed")):
+        response = client.get('/dog/breed/hound')
+        json_data = response.get_json()
+        assert response.status_code == 500
+        assert json_data['error'] == 'Error connecting to the Dog CEO API'
+        assert json_data['message'] == 'API request failed'

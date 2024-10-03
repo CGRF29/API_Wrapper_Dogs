@@ -2,6 +2,7 @@ import pytest
 import os
 import mysql.connector
 from controllers import insert_request_data
+from unittest.mock import patch
 
 # Configurar el entorno de pruebas antes de ejecutar las pruebas
 @pytest.fixture(scope='session', autouse=True)
@@ -25,7 +26,7 @@ def setup_database():
     cursor = conn.cursor()
 
     # Crear la tabla si no existe
-    cursor.execute("""
+    cursor.execute("""                   
         CREATE TABLE IF NOT EXISTS requests (
             id INT AUTO_INCREMENT PRIMARY KEY,
             breed VARCHAR(50),
@@ -67,3 +68,14 @@ def test_insert_request_data(setup_database):
     assert result[2] == image_url
     assert result[3] is not None
     assert result[4] == response_code
+"""
+def test_insert_request_data_database_error(setup_database):
+    # Simular un error de conexión a la base de datos
+    with patch('mysql.connector.connect', side_effect=mysql.connector.Error("Connection Error")):
+        # Ejecutar la función y verificar que maneje la excepción
+        try:
+            insert_request_data('hound', 'https://images.dog.ceo/breeds/hound/image.jpg', 200)
+            assert False, "Expected an exception but none was raised."
+        except mysql.connector.Error as e:
+            assert str(e) == "Connection Error"
+"""
