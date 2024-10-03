@@ -1,12 +1,43 @@
-INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound-ibizan/n02091244_61.jpg, 200
-WARNING  root:app.py:39 Breed 'invalid_breed' not found (404)
-ERROR    root:app.py:47 Timeout error occurred: 
-INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound/image.jpg, 200
-2024-10-02 00:44:18,400 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-02 17:33:13,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-10-02 00:44:18,400 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-02 00:44:18,402 - INFO -  * Restarting with stat
-2024-10-02 00:44:18,944 - WARNING -  * Debugger is active!
-2024-10-02 00:44:18,948 - INFO -  * Debugger PIN: 764-210-081
-2024-10-02 00:45:14,772 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/dachshund-123503_640.jpg, 200
-2024-10-02 00:45:14,774 - INFO - 127.0.0.1 - - [02/Oct/2024 00:45:14] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
+2024-10-02 17:33:13,856 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-02 17:33:13,858 - INFO -  * Restarting with stat
+2024-10-02 17:33:14,739 - WARNING -  * Debugger is active!
+2024-10-02 17:33:14,747 - INFO -  * Debugger PIN: 764-210-081
+2024-10-02 17:33:21,704 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/Miniature_Daschund.jpg, 200
+2024-10-02 17:33:21,708 - INFO - 127.0.0.1 - - [02/Oct/2024 17:33:21] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
+2024-10-02 17:34:17,185 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_2106.jpg, 200
+2024-10-02 17:34:17,189 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:17] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-02 17:34:27,564 - INFO - Data inserted: bulldog, https://images.dog.ceo/breeds/bulldog-english/jager-1.jpg, 200
+2024-10-02 17:34:27,566 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:27] "GET /dog/breed/bulldog HTTP/1.1" 200 -
+2024-10-02 17:34:35,459 - INFO - Data inserted: Bulldog, https://images.dog.ceo/breeds/bulldog-boston/n02096585_1069.jpg, 200
+2024-10-02 17:34:35,461 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:35] "GET /dog/breed/Bulldog HTTP/1.1" 200 -
+2024-10-02 17:35:01,576 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_5616.jpg, 200
+2024-10-02 17:35:01,579 - INFO - 127.0.0.1 - - [02/Oct/2024 17:35:01] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-02 17:36:00,164 - INFO - 127.0.0.1 - - [02/Oct/2024 17:36:00] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-02 17:38:05,278 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_1546.jpg, 200
+2024-10-02 17:38:05,280 - INFO - 127.0.0.1 - - [02/Oct/2024 17:38:05] "HEAD /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-02 17:38:26,301 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/poodle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000257B01B01F0>: Failed to resolve 'dog.ceo' ([Errno 11001] getaddrinfo failed)"))
+2024-10-02 17:38:26,302 - INFO - 127.0.0.1 - - [02/Oct/2024 17:38:26] "[35m[1mGET /dog/breed/poodle HTTP/1.1[0m" 500 -
+2024-10-02 18:00:27,791 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-02 18:00:27,791 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-02 18:00:27,792 - INFO -  * Restarting with stat
+2024-10-02 18:00:28,308 - WARNING -  * Debugger is active!
+2024-10-02 18:00:28,313 - INFO -  * Debugger PIN: 764-210-081
+2024-10-02 18:00:51,063 - ERROR - Database error: 1049 (42000): Unknown database 'dog_api'
+2024-10-02 18:00:51,081 - INFO - 127.0.0.1 - - [02/Oct/2024 18:00:51] "[35m[1mGET /dog/breed/poodle HTTP/1.1[0m" 500 -
+2024-10-02 18:04:38,321 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\controllers.py', reloading
+2024-10-02 18:04:38,348 - INFO -  * Restarting with stat
+2024-10-02 18:04:38,948 - WARNING -  * Debugger is active!
+2024-10-02 18:04:38,953 - INFO -  * Debugger PIN: 764-210-081
+2024-10-02 18:05:35,588 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-02 18:05:35,588 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-02 18:05:35,589 - INFO -  * Restarting with stat
+2024-10-02 18:05:36,128 - WARNING -  * Debugger is active!
+2024-10-02 18:05:36,134 - INFO -  * Debugger PIN: 764-210-081
+2024-10-02 18:05:50,092 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14968.jpg, 200
+2024-10-02 18:05:50,096 - INFO - 127.0.0.1 - - [02/Oct/2024 18:05:50] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-02 18:07:03,555 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_911.jpg, 200
+2024-10-02 18:07:03,557 - INFO - 127.0.0.1 - - [02/Oct/2024 18:07:03] "GET /dog/breed/poodle HTTP/1.1" 200 -

@@ -1,4 +1,5 @@
-INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound-english/n02089973_3688.jpg, 200
+INFO     root:controllers.py:56 Data inserted: hound, https://images.dog.ceo/breeds/hound-blood/n02088466_8904.jpg, 200
 WARNING  root:app.py:39 Breed 'invalid_breed' not found (404)
 ERROR    root:app.py:47 Timeout error occurred: 
-INFO     root:controllers.py:47 Data inserted: hound, https://images.dog.ceo/breeds/hound/image.jpg, 200
+ERROR    root:app.py:56 Error connecting to Dog CEO API: API request failed
+INFO     root:controllers.py:56 Data inserted: hound, https://images.dog.ceo/breeds/hound/image.jpg, 200
