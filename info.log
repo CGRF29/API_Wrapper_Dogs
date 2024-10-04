@@ -1,43 +1,148 @@
-2024-10-02 17:33:13,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-03 19:43:36,395 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-10-02 17:33:13,856 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-02 17:33:13,858 - INFO -  * Restarting with stat
-2024-10-02 17:33:14,739 - WARNING -  * Debugger is active!
-2024-10-02 17:33:14,747 - INFO -  * Debugger PIN: 764-210-081
-2024-10-02 17:33:21,704 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/Miniature_Daschund.jpg, 200
-2024-10-02 17:33:21,708 - INFO - 127.0.0.1 - - [02/Oct/2024 17:33:21] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
-2024-10-02 17:34:17,185 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_2106.jpg, 200
-2024-10-02 17:34:17,189 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:17] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-02 17:34:27,564 - INFO - Data inserted: bulldog, https://images.dog.ceo/breeds/bulldog-english/jager-1.jpg, 200
-2024-10-02 17:34:27,566 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:27] "GET /dog/breed/bulldog HTTP/1.1" 200 -
-2024-10-02 17:34:35,459 - INFO - Data inserted: Bulldog, https://images.dog.ceo/breeds/bulldog-boston/n02096585_1069.jpg, 200
-2024-10-02 17:34:35,461 - INFO - 127.0.0.1 - - [02/Oct/2024 17:34:35] "GET /dog/breed/Bulldog HTTP/1.1" 200 -
-2024-10-02 17:35:01,576 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_5616.jpg, 200
-2024-10-02 17:35:01,579 - INFO - 127.0.0.1 - - [02/Oct/2024 17:35:01] "GET /dog/breed/poodle HTTP/1.1" 200 -
-2024-10-02 17:36:00,164 - INFO - 127.0.0.1 - - [02/Oct/2024 17:36:00] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
-2024-10-02 17:38:05,278 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_1546.jpg, 200
-2024-10-02 17:38:05,280 - INFO - 127.0.0.1 - - [02/Oct/2024 17:38:05] "HEAD /dog/breed/poodle HTTP/1.1" 200 -
-2024-10-02 17:38:26,301 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/poodle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000257B01B01F0>: Failed to resolve 'dog.ceo' ([Errno 11001] getaddrinfo failed)"))
-2024-10-02 17:38:26,302 - INFO - 127.0.0.1 - - [02/Oct/2024 17:38:26] "[35m[1mGET /dog/breed/poodle HTTP/1.1[0m" 500 -
-2024-10-02 18:00:27,791 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-03 19:43:36,396 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-03 19:43:36,398 - INFO -  * Restarting with stat
+2024-10-03 19:43:36,950 - WARNING -  * Debugger is active!
+2024-10-03 19:43:36,958 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:44:26,245 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_4170.jpg, 200
+2024-10-03 19:44:26,247 - INFO - 127.0.0.1 - - [03/Oct/2024 19:44:26] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 19:44:26,570 - INFO - 127.0.0.1 - - [03/Oct/2024 19:44:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-03 19:47:57,323 - INFO - 127.0.0.1 - - [03/Oct/2024 19:47:57] "[33mGET /dog/breed/images/random HTTP/1.1[0m" 404 -
+2024-10-03 19:48:53,993 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14095.jpg, 200
+2024-10-03 19:48:53,996 - INFO - 127.0.0.1 - - [03/Oct/2024 19:48:53] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-03 19:51:58,980 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 19:51:59,014 - INFO -  * Restarting with stat
+2024-10-03 19:51:59,632 - WARNING -  * Debugger is active!
+2024-10-03 19:51:59,637 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:52:42,091 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\controllers.py', reloading
+2024-10-03 19:52:42,141 - INFO -  * Restarting with stat
+2024-10-03 19:52:42,757 - WARNING -  * Debugger is active!
+2024-10-03 19:52:42,762 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:52:58,957 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 19:52:58,986 - INFO -  * Restarting with stat
+2024-10-03 19:52:59,575 - WARNING -  * Debugger is active!
+2024-10-03 19:52:59,581 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:53:04,650 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\controllers.py', reloading
+2024-10-03 19:53:04,683 - INFO -  * Restarting with stat
+2024-10-03 19:53:05,226 - WARNING -  * Debugger is active!
+2024-10-03 19:53:05,231 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:53:13,896 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_3147.jpg, 200
+2024-10-03 19:53:13,899 - INFO - 127.0.0.1 - - [03/Oct/2024 19:53:13] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 19:54:01,840 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\controllers.py', reloading
+2024-10-03 19:54:01,883 - INFO -  * Restarting with stat
+2024-10-03 19:54:02,487 - WARNING -  * Debugger is active!
+2024-10-03 19:54:02,492 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 19:54:34,866 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 19:54:34,900 - INFO -  * Restarting with stat
+2024-10-03 19:54:35,562 - WARNING -  * Debugger is active!
+2024-10-03 19:54:35,567 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 20:17:11,195 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16881.jpg, 200
+2024-10-03 20:17:11,197 - INFO - 127.0.0.1 - - [03/Oct/2024 20:17:11] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-03 21:13:12,406 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-10-02 18:00:27,791 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-02 18:00:27,792 - INFO -  * Restarting with stat
-2024-10-02 18:00:28,308 - WARNING -  * Debugger is active!
-2024-10-02 18:00:28,313 - INFO -  * Debugger PIN: 764-210-081
-2024-10-02 18:00:51,063 - ERROR - Database error: 1049 (42000): Unknown database 'dog_api'
-2024-10-02 18:00:51,081 - INFO - 127.0.0.1 - - [02/Oct/2024 18:00:51] "[35m[1mGET /dog/breed/poodle HTTP/1.1[0m" 500 -
-2024-10-02 18:04:38,321 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\controllers.py', reloading
-2024-10-02 18:04:38,348 - INFO -  * Restarting with stat
-2024-10-02 18:04:38,948 - WARNING -  * Debugger is active!
-2024-10-02 18:04:38,953 - INFO -  * Debugger PIN: 764-210-081
-2024-10-02 18:05:35,588 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-03 21:13:12,407 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-03 21:13:12,408 - INFO -  * Restarting with stat
+2024-10-03 21:13:13,055 - WARNING -  * Debugger is active!
+2024-10-03 21:13:13,061 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 21:13:21,078 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_1226.jpg, 200
+2024-10-03 21:13:21,080 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:21] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:23,208 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_2504.jpg, 200
+2024-10-03 21:13:23,213 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:23] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:25,492 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_1576.jpg, 200
+2024-10-03 21:13:25,495 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:25] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:27,377 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_341.jpg, 200
+2024-10-03 21:13:27,379 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:27] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:29,309 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_777.jpg, 200
+2024-10-03 21:13:29,312 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:29] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:31,141 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_801.jpg, 200
+2024-10-03 21:13:31,144 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:31] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:32,931 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_2369.jpg, 200
+2024-10-03 21:13:32,933 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:32] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:34,718 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_230.jpg, 200
+2024-10-03 21:13:34,720 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:34] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:36,491 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_1344.jpg, 200
+2024-10-03 21:13:36,494 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:36] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:38,131 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/unnamed_(4).jpg, 200
+2024-10-03 21:13:38,134 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:38] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:40,139 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_2552.jpg, 200
+2024-10-03 21:13:40,142 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:40] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:42,264 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_525.jpg, 200
+2024-10-03 21:13:42,267 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:42] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:43,903 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_166.jpg, 200
+2024-10-03 21:13:43,905 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:43] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:13:45,653 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_629.jpg, 200
+2024-10-03 21:13:45,655 - INFO - 127.0.0.1 - - [03/Oct/2024 21:13:45] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:14:30,097 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 21:14:30,131 - INFO -  * Restarting with stat
+2024-10-03 21:14:30,796 - WARNING -  * Debugger is active!
+2024-10-03 21:14:30,802 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 21:14:31,827 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 21:14:31,862 - INFO -  * Restarting with stat
+2024-10-03 21:14:32,515 - WARNING -  * Debugger is active!
+2024-10-03 21:14:32,520 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 21:14:41,650 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 21:14:41,683 - INFO -  * Restarting with stat
+2024-10-03 21:15:05,866 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-10-02 18:05:35,588 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-02 18:05:35,589 - INFO -  * Restarting with stat
-2024-10-02 18:05:36,128 - WARNING -  * Debugger is active!
-2024-10-02 18:05:36,134 - INFO -  * Debugger PIN: 764-210-081
-2024-10-02 18:05:50,092 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14968.jpg, 200
-2024-10-02 18:05:50,096 - INFO - 127.0.0.1 - - [02/Oct/2024 18:05:50] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-02 18:07:03,555 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_911.jpg, 200
-2024-10-02 18:07:03,557 - INFO - 127.0.0.1 - - [02/Oct/2024 18:07:03] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:15:05,866 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-03 21:15:05,868 - INFO -  * Restarting with stat
+2024-10-03 21:15:06,522 - WARNING -  * Debugger is active!
+2024-10-03 21:15:06,528 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 21:15:10,920 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_4740.jpg, 200
+2024-10-03 21:15:10,923 - INFO - 127.0.0.1 - - [03/Oct/2024 21:15:10] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:15:15,887 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_1536.jpg, 200
+2024-10-03 21:15:15,889 - INFO - 127.0.0.1 - - [03/Oct/2024 21:15:15] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 21:15:18,203 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_1785.jpg, 200
+2024-10-03 21:15:18,206 - INFO - 127.0.0.1 - - [03/Oct/2024 21:15:18] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:12,885 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_2699.jpg, 200
+2024-10-03 22:00:12,887 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:12] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:17,802 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_995.jpg, 200
+2024-10-03 22:00:17,804 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:17] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:19,694 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_836.jpg, 200
+2024-10-03 22:00:19,697 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:19] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:22,073 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_300.jpg, 200
+2024-10-03 22:00:22,076 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:22] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:24,428 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_2908.jpg, 200
+2024-10-03 22:00:24,431 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:24] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:26,393 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_801.jpg, 200
+2024-10-03 22:00:26,395 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:26] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:28,657 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_2746.jpg, 200
+2024-10-03 22:00:28,659 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:28] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:31,304 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-standard/n02113799_4904.jpg, 200
+2024-10-03 22:00:31,306 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:31] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:33,396 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_3293.jpg, 200
+2024-10-03 22:00:33,398 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:33] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:35,242 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_448.jpg, 200
+2024-10-03 22:00:35,244 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:35] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:37,580 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_1590.jpg, 200
+2024-10-03 22:00:37,583 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:37] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:39,776 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_9550.jpg, 200
+2024-10-03 22:00:39,778 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:39] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:41,753 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_7102.jpg, 200
+2024-10-03 22:00:41,755 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:41] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:43,844 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_479.jpg, 200
+2024-10-03 22:00:43,845 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:43] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:45,887 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_5675.jpg, 200
+2024-10-03 22:00:45,889 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:45] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:48,101 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_6813.jpg, 200
+2024-10-03 22:00:48,103 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:48] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:00:50,194 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-toy/n02113624_479.jpg, 200
+2024-10-03 22:00:50,196 - INFO - 127.0.0.1 - - [03/Oct/2024 22:00:50] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-03 22:01:15,931 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
+2024-10-03 22:01:15,981 - INFO -  * Restarting with stat
+2024-10-03 22:01:16,652 - WARNING -  * Debugger is active!
+2024-10-03 22:01:16,657 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 22:08:23,530 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-03 22:08:23,531 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-03 22:08:23,532 - INFO -  * Restarting with stat
+2024-10-03 22:08:24,093 - WARNING -  * Debugger is active!
+2024-10-03 22:08:24,097 - INFO -  * Debugger PIN: 764-210-081
+2024-10-03 22:08:36,525 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190710_143021.jpg, 200
+2024-10-03 22:08:36,528 - INFO - 127.0.0.1 - - [03/Oct/2024 22:08:36] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-03 22:09:18,456 - WARNING - Breed 'dalmata' not found (404)
+2024-10-03 22:09:18,457 - INFO - 127.0.0.1 - - [03/Oct/2024 22:09:18] "[33mGET /dog/breed/dalmata HTTP/1.1[0m" 404 -
+2024-10-03 22:09:32,229 - WARNING - Breed 'retriver' not found (404)
+2024-10-03 22:09:32,231 - INFO - 127.0.0.1 - - [03/Oct/2024 22:09:32] "[33mGET /dog/breed/retriver HTTP/1.1[0m" 404 -
+2024-10-03 22:10:02,447 - INFO - Data inserted: labrador, https://images.dog.ceo/breeds/labrador/n02099712_4037.jpg, 200
+2024-10-03 22:10:02,450 - INFO - 127.0.0.1 - - [03/Oct/2024 22:10:02] "GET /dog/breed/labrador HTTP/1.1" 200 -
