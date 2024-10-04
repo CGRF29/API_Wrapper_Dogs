@@ -13,11 +13,13 @@ Este archivo contiene la lógica principal de la API Flask. Aquí se define el e
 
 `controllers.py`
 
-Define las funciones relacionadas con la base de datos, como la configuración de la conexión y la inserción de datos. Contiene la lógica para insertar en la tabla requests, que almacena la raza solicitada, la URL de la imagen, la marca de tiempo y el código de respuesta de la API.
+Define las funciones relacionadas con la base de datos, como la configuración de la conexión y la inserción de datos. Contiene la lógica para insertar en la tabla requests, en donde se almacena la raza de perro solicitada, la URL de la imagen, la marca de tiempo y el código de respuesta de la API.
 
 `logging_config.py`
 
-Configura el sistema de registro de la aplicación. Establece los manejadores de logs para almacenar información de nivel INFO y errores en archivos separados (info.log y error.log), permitiendo la rotación de logs diarios.
+Configura el sistema de registro de la aplicación. Establece los manejadores de logs para almacenar información de nivel INFO y errores en archivos separados (info.log, error.log y info_test.log), permitiendo la rotación de logs diarios.
+
+📁 tests
 
 `test_app.py`
 
@@ -43,25 +45,44 @@ pip install -r requirements.txt
 Para ejecutar la aplicación, usa el siguiente comando:
 python app.py
 
-Puedes probar el endpoint utilizando Postman:
+Puedes probar el endpoint utilizando:
+HTML
+- Ingresa la URL: http://localhost:5000/dog/breed/<type_breed>
+
+Postman
 - Crea una nueva solicitud GET
-- Ingresa la URL: http://localhost:5000/dog/breed/hound
+- Ingresa la URL: http://localhost:5000/dog/breed/<type_breed>
 - Haz clic en "Enviar" y observa la respuesta
 
 ## 📌 Pruebas
+Este proyecto incluye varias pruebas unitarias diseñadas para asegurar la funcionalidad y robustez de la API. Se utilizan herramientas como pytest y pytest-cov para ejecutar las pruebas y medir la cobertura del código.
 
+1. Puntos Clave Considerados para las Pruebas Unitarias
+    `Cobertura de Funcionalidades Clave:` Se aseguraron de probar todas las funcionalidades críticas de la API, incluyendo los endpoints y la interacción con la base de datos.
+    `Manejo de Errores:` Se implementaron pruebas para manejar situaciones de error, como solicitudes inválidas a la API y fallos de conexión a la base de datos. Esto incluye verificar que los mensajes de error se registren correctamente en los logs.
+    `Pruebas de Excepciones:` Se usaron técnicas de simulación (mocking) para simular errores en las dependencias externas, como la API externa y la base de datos, asegurando que se manejen adecuadamente.
+    `Validación de Respuestas:` Las pruebas validan no solo el código de estado de la respuesta, sino también el contenido de la respuesta JSON para asegurarse de que los datos devueltos sean correctos.
+    `Registro de Logs:` Se verificó que los errores se registraran adecuadamente en los archivos de log, lo que ayuda en la depuración y monitoreo del sistema.
+    `Uso de Herramientas de Prueba:` Se utilizó pytest para facilitar la ejecución y organización de las pruebas, así como pytest-cov para medir la cobertura del código. 
+
+2. Uso
 Para ejecutar las pruebas automatizadas:
 - Asegurarse que el contenedor de MySQL esté en ejecución
-- Ejecuta las pruebas utilizando pytest:
-coverage run -m pytest tests/
-- Para ver el reporte de cobertura:
+- Crear la base de datos 'dog_api_test' en MySQL:
+    CREATE DATABASE dog_api_test;
+    USE dog_api_test;
+
+Para ejecutar todas las pruebas, utiliza:
+coverage run -m pytest tests/ -v -s
+
+Para ver el reporte de cobertura:
 coverage report -m
 
-El proyecto tiene una cobertura de pruebas del 96%, con todas las áreas clave cubiertas. Las áreas faltantes se encuentran principalmente en el manejo de errores dentro de controllers.py, donde algunas rutas de error podrían requerir pruebas adicionales para alcanzar una cobertura del 100%.
+El proyecto cuenta con un 97% de cobertura de pruebas, lo que indica que la mayoría del código ha sido evaluado a través de pruebas unitarias. 
 
 ## 📌 Registro de Errores
 
-Los errores y la información de las solicitudes se registran en los archivos info.log y error.log, respectivamente.
+Los errores y la información de las solicitudes se registran en los archivos info.log, error.log y info_test.log, respectivamente.
 
 
 
