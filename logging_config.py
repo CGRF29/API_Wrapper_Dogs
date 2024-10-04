@@ -5,7 +5,7 @@ import logging # Módulo para registrar eventos y mensajes
 from logging.handlers import TimedRotatingFileHandler  # Manejador de logs con rotación programada
 
 # Función para configurar el sistema de logging
-def setup_logging():
+def setup_logging(testing=False):
     """
     Descripción:
     Configura el sistema de logging de la aplicación.
@@ -31,3 +31,10 @@ def setup_logging():
 
     # Configurar el logger
     logging.basicConfig(level=logging.INFO, handlers=[info_handler, error_handler])
+
+    # Si estamos en modo de prueba, agrega un handler para info_test.log
+    if testing:
+        test_info_handler = TimedRotatingFileHandler('info_test.log', when='D', interval=1, backupCount=4)
+        test_info_handler.setLevel(logging.INFO)
+        test_info_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        logging.getLogger().addHandler(test_info_handler)  

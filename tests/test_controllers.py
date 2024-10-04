@@ -3,8 +3,19 @@ import pytest
 import os
 import datetime
 import mysql.connector
+import logging
+from app import setup_logging
 from controllers import insert_request_data, get_db_config
 from unittest.mock import patch
+
+@pytest.fixture(scope='session', autouse=True)
+def configure_logging():
+    """
+    Descripción:
+    Configura el sistema de logging para las pruebas.
+        - Utiliza la función 'setup_logging' para establecer la configuración de logs que se utilizarán durante la ejecución de las pruebas.
+    """
+    setup_logging(testing=True)
 
 # Configurar el entorno de pruebas antes de ejecutar las pruebas
 @pytest.fixture(scope='session', autouse=True)
@@ -84,7 +95,7 @@ def test_insert_request_data(setup_database):
     assert result[3] is not None
     assert result[4] == response_code
 
-def test_insert_request_data_database_error(setup_database):
+def test_insert_request_data_database_error(setup_database,caplog):
     """
     Descripción:
     Prueba que simula un error de conexión a la base de datos para verificar que la función insert_request_data maneje correctamente las excepciones de conexión.

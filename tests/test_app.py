@@ -3,17 +3,7 @@ import pytest
 from app import app
 import requests
 import logging
-from app import setup_logging
 from unittest.mock import patch
-
-@pytest.fixture(scope='session', autouse=True)
-def configure_logging():
-    """
-    Descripción:
-    Configura el sistema de logging para las pruebas.
-        - Utiliza la función 'setup_logging' para establecer la configuración de logs que se utilizarán durante la ejecución de las pruebas.
-    """
-    setup_logging()
 
 @pytest.fixture
 def client():
@@ -25,7 +15,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_get_dog_image_real_api(client):
+def test_get_dog_image_real_api(client, caplog):
     """
     Descripción:
     Prueba que realiza una solicitud real a la API Dog CEO a través del endpoint `/dog/breed/<dog_breed>`.
@@ -37,15 +27,15 @@ def test_get_dog_image_real_api(client):
     Salida:
     - No devuelve nada. Utiliza asserts para verificar que la respuesta sea correcta.
     """
-    
-    # Hacer una solicitud real al endpoint que llama a la API Dog CEO
-    response = client.get('/dog/breed/beagle')
-    json_data = response.get_json()
-    # Verificar la respuesta
-    assert response.status_code == 200
-    #assert json_data['breed'] == 'beagle'
-    assert json_data['image_url'] is not None
-    assert json_data['status'] == 'success'
+    with caplog.at_level(logging.INFO):
+        # Hacer una solicitud real al endpoint que llama a la API Dog CEO
+        response = client.get('/dog/breed/beagle')
+        json_data = response.get_json()
+        # Verificar la respuesta
+        assert response.status_code == 200
+        #assert json_data['breed'] == 'beagle'
+        assert json_data['image_url'] is not None
+        assert json_data['status'] == 'success'
 
 def test_get_dog_image_invalid_breed(client, caplog):
     """
