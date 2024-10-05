@@ -4,6 +4,8 @@ import logging
 import datetime
 import os
 from dotenv import load_dotenv  # Importar load_dotenv
+#from mysql.connector import Error
+#import time
 
 ## Capa de control
 # Cargar las variables de entorno desde el archivo .env
@@ -26,7 +28,7 @@ def get_db_config():
             'password': os.getenv('MYSQL_PASSWORD'),  # Leer la contraseña desde las variables de entorno
             'host': os.getenv('MYSQL_HOST'),  # Leer el host desde las variables de entorno
             'port': int(os.getenv('MYSQL_PORT')),  # Leer el puerto desde las variables de entorno
-            'database': 'dog_api_test'  # Base de datos de prueba
+            'database': os.getenv('MYSQL_DATABASE_TEST') # Base de datos de prueba
         }
     else:
         # Configuración para el entorno de producción
@@ -37,7 +39,21 @@ def get_db_config():
             'port': int(os.getenv('MYSQL_PORT')),  # Leer el puerto desde las variables de entorno
             'database': os.getenv('MYSQL_DATABASE')  # Leer la base de datos desde las variables de entorno
         }
-    
+"""
+def wait_for_db():
+    Espera hasta que la base de datos esté disponible.
+
+    db_config = get_db_config()
+    while True:
+        try:
+            # Intenta conectarte a la base de datos
+            connection = mysql.connector.connect(**db_config)
+            if connection.is_connected():
+                connection.close()
+                break
+        except Error:
+            time.sleep(1)  # Espera 1 segundo antes de intentar nuevamente
+"""
 # Función para insertar los datos de la solicitud en la base de datos
 def insert_request_data(breed, image_url, timestamp, response_code):
     """
@@ -52,8 +68,12 @@ def insert_request_data(breed, image_url, timestamp, response_code):
     Salida:
     - Inserta los datos en la base de datos y registra el resultado en un log.
     """    
+    #wait_for_db()
     # Obtener la configuración correcta de la base de datos
     db_config = get_db_config()  
+    conn = None  # Inicializar la conexión como None
+    cursor = None  # Inicializar el cursor como None
+
     try:
         # Establecer la conexión con la base de datos usando la configuración obtenida
         with mysql.connector.connect(**db_config) as conn:
@@ -88,7 +108,7 @@ def insert_request_data(breed, image_url, timestamp, response_code):
     except mysql.connector.Error as e:
         logging.error(f"Database error: {e}")
         raise  # OJO: lanza la excepción para que la prueba pueda capturarla
-    
+        
     # Errores relacionados para cualquier otro tipo de error
     except Exception as e:
         logging.error(f"Unexpected error: {e}")
@@ -96,6 +116,8 @@ def insert_request_data(breed, image_url, timestamp, response_code):
 
     # Asegurarse de que el cursor y la conexión se cierran al finalizar   
     finally: 
-        if os.getenv('PYTHON_ENV') != 'test':      
+        #if os.getenv('PYTHON_ENV') != 'test':      
+        if cursor is not None:
             cursor.close()
+        if conn is not None:
             conn.close()

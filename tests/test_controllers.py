@@ -33,6 +33,7 @@ def setup_database():
     Salida:
     - Devuelve un cursor de la base de datos para interactuar con ella durante las pruebas.
     """
+    #wait_for_db()  # Esperar hasta que la base de datos esté lista
     db_config = get_db_config()
     # Conectar a la base de datos
     conn = mysql.connector.connect(**db_config)
