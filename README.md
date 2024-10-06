@@ -11,15 +11,19 @@ Este proyecto es una API wrapper que actúa como intermediario entre los usuario
 ## 📌 Archivos del Proyecto
 
 `requirements.txt`
+
 El archivo requirements.txt contiene una lista de las dependencias de Python que la aplicación necesita para funcionar correctamente. Estas dependencias se instalan automáticamente cuando se construye la imagen de Docker.
 
 `init.sql`
+
 El archivo init.sql contiene el script SQL que se ejecuta cuando se inicializa el contenedor de MySQL. Este script se utiliza para configurar la base de datos de la aplicación, por ejemplo, creando tablas necesarias, usuarios, o configuraciones iniciales.
 
 `Dockerfile`
+
 El archivo contiene instrucciones para construir una imagen de Docker. Define cómo se debe construir y configurar el entorno para ejecutar la aplicación Flask. Este archivo permite que la aplicación sea replicada en cualquier entorno de manera consistente.
 
 `docker-compose.yml`
+
 El archivo define los servicios necesarios para ejecutar la aplicación en contenedores separados y cómo interactúan entre sí. Permite ejecutar múltiples servicios de Docker, como la aplicación Flask y la base de datos MySQL, de forma conjunta con un solo comando.
 
 `app.py`
