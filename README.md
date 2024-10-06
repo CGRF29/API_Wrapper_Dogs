@@ -99,7 +99,7 @@ cd nombre-del-directorio
 ```
 2.	(Opcional) Modificar la configuración:
 -	Modificar las credenciales MySQL: Puedes cambiar las credenciales y el nombre de la base de datos en el archivo .env en las variables de entorno
--	Logs: Puedes personalizar la configuración en el archivo logging_config.py para ajustar la cantidad de información registrada en los logs de la aplicación.
+-	Logs: Puedes personalizar la configuración en el archivo logging_config.py para ajustar la rotación automática de logs en función del tiempo, modificando los parámetros como when (intervalo de tiempo) y backupCount (número de archivos de respaldo).
 
 3.	Construir y levanta los contenedores
 Navega al directorio donde está tu archivo docker-compose.yml y ejecuta:
@@ -138,10 +138,15 @@ Este proyecto incluye varias pruebas unitarias diseñadas para asegurar la funci
 
 1. Puntos clave considerados:
     `Cobertura de Funcionalidades Clave:` Se aseguraron de probar todas las funcionalidades críticas de la API, incluyendo los endpoints y la interacción con la base de datos.
+
     `Manejo de Errores:` Se implementaron pruebas para manejar situaciones de error, como solicitudes inválidas a la API y fallos de conexión a la base de datos. Esto incluye verificar que los mensajes de error se registren correctamente en los logs.
+    
     `Pruebas de Excepciones:` Se usaron técnicas de simulación (mocking) para simular errores en las dependencias externas, como la API externa y la base de datos, asegurando que se manejen adecuadamente.
+    
     `Validación de Respuestas:` Las pruebas validan no solo el código de estado de la respuesta, sino también el contenido de la respuesta JSON para asegurarse de que los datos devueltos sean correctos.
+    
     `Registro de Logs:` Se verificó que los errores se registraran adecuadamente en los archivos de log, lo que ayuda en la depuración y monitoreo del sistema.
+    
     `Uso de Herramientas de Prueba:` Se utilizó pytest para facilitar la ejecución y organización de las pruebas, así como pytest-cov para medir la cobertura del código. 
 
 2. Uso
@@ -171,13 +176,21 @@ Cualquier sugerencia para mejorar o modificar en el proyecto es bienvenida.
 ## 📌 Bibliografía
 
 What are API Wrappers? [Page](https://apidog.com/blog/what-are-api-wrappers/).
-How to Set Up and Configure MySQL in Docker [Datacamp](https://www.datacamp.com/tutorial/set-up-and-configure-mysql-in-docker).
-Python and MySQL Database: A Practical Introduction [Realpython](https://realpython.com/python-mysql/).
-Logging in Python [Realpython](https://realpython.com/python-logging/).
+
+How to Set Up and Configure MySQL in Docker [Page](https://www.datacamp.com/tutorial/set-up-and-configure-mysql-in-docker).
+
+Python and MySQL Database: A Practical Introduction [Page](https://realpython.com/python-mysql/).
+
+Logging in Python [Page](https://realpython.com/python-logging/).
+
 Create Tests for the Flask Framework Using Pytest-Flask[Page](https://openclassrooms.com/en/courses/7747411-test-your-python-project/7894396-create-tests-for-the-flask-framework-using-pytest-flask).
+
 Testing Flask Applications with Pytest [Page](https://testdriven.io/blog/flask-pytest/).
+
 Mastering Python Mock and Patch: Mocking For Unit Testing [Page](https://codefather.tech/blog/python-mock-and-patch/).
+
 Dockerizing a Flask-MySQL app with docker-compose[Page](https://stavshamir.github.io/python/dockerizing-a-flask-mysql-app-with-docker-compose/).
+
 Dockerizing Flask+MySQL Application Using Compose[Page](https://blog.abbasmj.com/dockerizing-flaskmysql-application-using-compose).
 
 
