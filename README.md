@@ -1,4 +1,4 @@
-# API_Wrapper_Dogs
+# API_Wrapper_Dogs 
 
 ## 📌 Descripción
 
@@ -65,12 +65,18 @@ Para ejecutar la aplicación, usa el siguiente comando:
 python app.py
 
 Puedes probar el endpoint utilizando:
-HTML
-- Ingresa la URL: http://localhost:5000/dog/breed/<type_breed>
+> HTML
+- Ingresa la URL: 
+```
+http://localhost:5000/dog/breed/<type_breed>
+```
 
-Postman
+> Postman
 - Crea una nueva solicitud GET
-- Ingresa la URL: http://localhost:5000/dog/breed/<type_breed>
+- Ingresa la URL: 
+```
+http://localhost:5000/dog/breed/<type_breed>
+```
 - Haz clic en "Enviar" y observa la respuesta
 
 ## 📌 Uso Docker-Compose
@@ -98,15 +104,26 @@ flask_app   |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 
 4.	Acceder a la aplicación:
 Una vez que los contenedores estén corriendo, puedes acceder a la API Flask en tu navegador o usando herramientas como Postman .
-HTML
-- Ingresa la URL http://localhost:5000/dog/breed/<type_breed>
-Postman
+
+> HTML
+- Ingresa la URL 
+```
+http://localhost:5000/dog/breed/<type_breed>
+```
+
+> Postman
 - Crea una nueva solicitud GET
-- Ingresa la URL: http://localhost:5000/dog/breed/<type_breed>
+- Ingresa la URL: 
+```
+http://localhost:5000/dog/breed/<type_breed>
+```
 - Haz clic en "Enviar" y observa la respuesta
+
 5.	Detener la aplicación:
 Si deseas detener los contenedores, simplemente presiona CTRL + C en la terminal donde ejecutaste docker-compose up. Para detener y eliminar todos los contenedores y redes asociadas, ejecuta:
->  docker-compose down
+```
+docker-compose down
+```
 
 ## 📌 Pruebas
 Este proyecto incluye varias pruebas unitarias diseñadas para asegurar la funcionalidad y robustez de la API. Se utilizan herramientas como pytest y pytest-cov para ejecutar las pruebas y medir la cobertura del código.
@@ -141,11 +158,9 @@ El proyecto cuenta con un 97% de cobertura de pruebas, lo que indica que la mayo
 
 Los errores y la información de las solicitudes se registran en los archivos info.log, error.log y info_test.log, respectivamente.
 
-## 📌 
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [x] #739
+## 📌 Mejoras
+
+Implement rate limiting on the Flask API to avoid abuse.
 
 ## 📌 Bibliografía
 
