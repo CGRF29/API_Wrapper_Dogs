@@ -5,20 +5,12 @@ import datetime
 import logging
 from logging_config import setup_logging 
 from controllers import insert_request_data 
-#from flask_limiter import Limiter
-#from flask_limiter.util import get_remote_address
 
 # Crear una instancia de la aplicación Flask
 app = Flask(__name__)
 # Configurar logging a través de una función externa definida en logging_config.py
 setup_logging() 
-""" 
-# Configurar el limitador
-limiter = Limiter(
-    get_remote_address,  # Función para obtener la dirección IP del cliente
-    default_limits=["200 per day", "1 per hour"]  # Límites por defecto
-)
-"""
+
 # Ruta para obtener una imagen de una raza de perro específica
 @app.route('/dog/breed/<breed_name>', methods=['GET'])
 #@limiter.limit("1 per minute")  # Limitar a 10 solicitudes por minuto por dirección IP
