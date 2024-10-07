@@ -65,12 +65,12 @@ pip install -r requirements.txt
 
 ## 📌 Use
 
-To run the application, use the following command:
+1. To run the application, use the following command:
 ```
 python app.py
 ```
 
-Test the endpoint using:
+2. Test the endpoint using:
 HTML
 - Enter the URL: 
 ```
@@ -85,6 +85,16 @@ http://localhost:5000/dog/breed/<type_breed>
 ```
 - Click on “Send” and watch the response
 
+3. Visualize the correct request in MySQL Container
+```
+docker exec -it mysql-container mysql -u root -p
+```
+```
+#MySQL
+USE dog_api;
+SELECT * FROM requests;
+```
+
 ## 📌 Use with Docker-Compose
 
 > [!NOTE]
@@ -95,7 +105,7 @@ Steps to execute the application:
 1.	Clone the project repository:
 ```
 git clone https://tu-repositorio.git
-cd nombre-del-directorio
+cd API_Wrapper_Dogs
 ```
 
 2.	(Optional) Modify the configuration:
@@ -105,7 +115,8 @@ cd nombre-del-directorio
 3.	Build and lift containers
 Navigate to the directory where your docker-compose.yml file is located and run:
 ```
-docker-compose up –build
+docker-compose up –build -d
+docker-compose up
 ```
 The containers will be ready for use when you see something similar to:
 ```
@@ -127,7 +138,17 @@ http://localhost:5000/dog/breed/<type_breed>
 ```
 3. Click on “Send” and watch the response
 
-5.	Stop the application:
+5. Visualize the correct request in MySQL Container
+```
+docker exec -it mysql_db mysql -u root -p
+```
+```
+#MySQL
+USE dog_api;
+SELECT * FROM requests;
+```
+
+6.	Stop the application:
 If you want to stop the containers, simply press CTRL + C in the terminal where you ran docker-compose up. To stop and remove all containers and associated networks, run:
 ```
 docker-compose down
