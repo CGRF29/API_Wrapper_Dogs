@@ -104,7 +104,7 @@ Steps to execute the application:
 
 1.	Clone the project repository:
 ```
-git clone https://tu-repositorio.git
+git clone https://github.com/CGRF29/API_Wrapper_Dogs.git
 cd API_Wrapper_Dogs
 ```
 
