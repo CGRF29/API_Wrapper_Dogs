@@ -191,6 +191,8 @@ coverage report -m
 ```
 The project has 97% test coverage, indicating that the majority of the code has been evaluated through unit testing.
 
+![image](https://github.com/user-attachments/assets/5ddb1d9e-c0a4-45ba-baf6-b943b30b83e4)
+
 ## 📌 Future improvements
 
 This project can be further enhanced and scaled with different additional functionalities. An example of improvement would be the implementation of rate limiting in the Flask API to prevent abuse and server overloads, which would help ensure controlled and efficient access to the API, protecting it from excessive or malicious use.
