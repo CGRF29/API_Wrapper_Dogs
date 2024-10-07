@@ -1,10 +1,27 @@
-2024-10-05 11:21:33,981 - ERROR - Database error: Connection Error
-2024-10-05 11:26:10,775 - ERROR - Database error: Connection Error
-2024-10-05 20:03:16,155 - ERROR - Database error: Connection Error
-2024-10-05 20:06:05,551 - ERROR - Database error: Connection Error
-2024-10-05 20:06:33,629 - ERROR - Database error: Connection Error
-2024-10-05 20:06:44,072 - ERROR - Database error: Connection Error
-2024-10-05 20:07:08,697 - ERROR - Database error: Connection Error
-2024-10-05 20:41:58,434 - ERROR - Database error: Connection Error
-2024-10-05 20:42:58,905 - ERROR - Database error: Connection Error
-2024-10-05 20:48:54,229 - ERROR - Database error: Connection Error
+2024-10-06 19:21:36,149 - ERROR - Database error: Connection Error
+2024-10-06 19:24:11,341 - ERROR - Database error: Connection Error
+2024-10-06 19:32:03,439 - ERROR - Database error: Connection Error
+2024-10-06 19:46:38,060 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_5716.jpg, 200
+2024-10-06 19:46:38,497 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-06 19:46:38,502 - ERROR - Timeout error occurred: 
+2024-10-06 19:46:38,506 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-06 19:46:39,104 - ERROR - Database error: Connection Error
+2024-10-06 19:46:39,104 - ERROR - Database error: Connection Error
+2024-10-06 19:55:35,802 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16704.jpg, 200
+2024-10-06 19:55:36,276 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-06 19:55:36,285 - ERROR - Timeout error occurred: 
+2024-10-06 19:55:36,290 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-06 19:55:36,870 - ERROR - Database error: Connection Error
+2024-10-06 19:55:36,870 - ERROR - Database error: Connection Error
+2024-10-06 20:05:14,802 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_13236.jpg, 200
+2024-10-06 20:05:15,259 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-06 20:05:15,268 - ERROR - Timeout error occurred: 
+2024-10-06 20:05:15,275 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-06 20:05:15,890 - ERROR - Database error: Connection Error
+2024-10-06 20:05:15,890 - ERROR - Database error: Connection Error
+2024-10-06 20:06:03,163 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11130.jpg, 200
+2024-10-06 20:06:03,603 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-06 20:06:03,610 - ERROR - Timeout error occurred: 
+2024-10-06 20:06:03,618 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-06 20:06:04,242 - ERROR - Database error: Connection Error
+2024-10-06 20:06:04,242 - ERROR - Database error: Connection Error

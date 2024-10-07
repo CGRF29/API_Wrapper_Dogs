@@ -1,307 +1,93 @@
-2024-10-05 10:16:54,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-07 00:33:24,006 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.70:5000
-2024-10-05 10:16:54,530 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:16:54,533 - INFO -  * Restarting with stat
-2024-10-05 10:16:55,301 - WARNING -  * Debugger is active!
-2024-10-05 10:16:55,308 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:19:30,413 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:19:30,459 - INFO - 127.0.0.1 - - [05/Oct/2024 10:19:30] "[35m[1mGET /dog/breed/labrador HTTP/1.1[0m" 500 -
-2024-10-05 10:19:30,813 - INFO - 127.0.0.1 - - [05/Oct/2024 10:19:30] "GET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-05 10:19:30,813 - INFO - 127.0.0.1 - - [05/Oct/2024 10:19:30] "GET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-05 10:19:30,854 - INFO - 127.0.0.1 - - [05/Oct/2024 10:19:30] "GET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png&s=6248DlxkFpuZOZwIC45V HTTP/1.1" 200 -
-2024-10-05 10:19:31,254 - INFO - 127.0.0.1 - - [05/Oct/2024 10:19:31] "GET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-05 10:26:54,416 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.70:5000
-2024-10-05 10:26:54,416 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:26:54,418 - INFO -  * Restarting with stat
-2024-10-05 10:26:55,241 - WARNING -  * Debugger is active!
-2024-10-05 10:26:55,248 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:27:00,142 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:27:00,182 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:00] "[35m[1mGET /dog/breed/labrador HTTP/1.1[0m" 500 -
-2024-10-05 10:27:00,495 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:00] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-05 10:27:00,496 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:00] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-05 10:27:00,510 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:00] "GET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png&s=pQamHjh0PKxM5rHoDXyW HTTP/1.1" 200 -
-2024-10-05 10:27:00,637 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:00] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-05 10:27:14,871 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:27:14,909 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:14] "[35m[1mGET /dog/breed/labrador HTTP/1.1[0m" 500 -
-2024-10-05 10:27:14,937 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:14] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-05 10:27:14,939 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:14] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-05 10:27:14,955 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:14] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png&s=pQamHjh0PKxM5rHoDXyW HTTP/1.1[0m" 304 -
-2024-10-05 10:27:15,086 - INFO - 127.0.0.1 - - [05/Oct/2024 10:27:15] "[36mGET /dog/breed/labrador?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-05 10:28:05,160 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\tests\\test_controllers.py', reloading
-2024-10-05 10:28:05,217 - INFO -  * Restarting with stat
-2024-10-05 10:28:06,044 - WARNING -  * Debugger is active!
-2024-10-05 10:28:06,051 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:28:18,212 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
-2024-10-05 10:28:18,236 - INFO -  * Restarting with stat
-2024-10-05 10:28:19,036 - WARNING -  * Debugger is active!
-2024-10-05 10:28:19,044 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:29:06,545 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.70:5000
-2024-10-05 10:29:06,545 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:29:06,547 - INFO -  * Restarting with stat
-2024-10-05 10:29:07,320 - WARNING -  * Debugger is active!
-2024-10-05 10:29:07,326 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:29:14,389 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:29:14,460 - INFO - 127.0.0.1 - - [05/Oct/2024 10:29:14] "[35m[1mGET /dog/breed/poodle HTTP/1.1[0m" 500 -
-2024-10-05 10:29:14,947 - INFO - 127.0.0.1 - - [05/Oct/2024 10:29:14] "GET /dog/breed/poodle?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-05 10:29:14,948 - INFO - 127.0.0.1 - - [05/Oct/2024 10:29:14] "GET /dog/breed/poodle?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-05 10:29:15,010 - INFO - 127.0.0.1 - - [05/Oct/2024 10:29:15] "GET /dog/breed/poodle?__debugger__=yes&cmd=resource&f=console.png&s=SVXWdFf6FcGi7rqZehtu HTTP/1.1" 200 -
-2024-10-05 10:29:15,348 - INFO - 127.0.0.1 - - [05/Oct/2024 10:29:15] "GET /dog/breed/poodle?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-05 10:30:42,496 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
-2024-10-05 10:30:42,541 - INFO -  * Restarting with stat
-2024-10-05 10:30:43,347 - WARNING -  * Debugger is active!
-2024-10-05 10:30:43,354 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:31:38,262 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:31:38,313 - INFO - 127.0.0.1 - - [05/Oct/2024 10:31:38] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 10:31:52,307 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\app.py', reloading
-2024-10-05 10:31:52,349 - INFO -  * Restarting with stat
-2024-10-05 10:31:53,145 - WARNING -  * Debugger is active!
-2024-10-05 10:31:53,151 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:32:06,237 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-10-05 10:32:06,237 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:32:06,238 - INFO -  * Restarting with stat
-2024-10-05 10:32:06,993 - WARNING -  * Debugger is active!
-2024-10-05 10:32:07,000 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:32:11,441 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:32:11,487 - INFO - 127.0.0.1 - - [05/Oct/2024 10:32:11] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 10:38:02,792 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-10-05 10:38:02,792 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:38:02,794 - INFO -  * Restarting with stat
-2024-10-05 10:38:03,853 - WARNING -  * Debugger is active!
-2024-10-05 10:38:03,862 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:38:10,667 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:38:10,724 - INFO - 127.0.0.1 - - [05/Oct/2024 10:38:10] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 10:42:30,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-10-05 10:42:30,260 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 10:42:30,262 - INFO -  * Restarting with stat
-2024-10-05 10:42:31,222 - WARNING -  * Debugger is active!
-2024-10-05 10:42:31,233 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:42:47,305 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:42:47,400 - INFO - 127.0.0.1 - - [05/Oct/2024 10:42:47] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 10:44:54,496 - ERROR - Database error: 2005 (HY000): Unknown MySQL server host 'db  # Cambia 'localhost' a 'db' para la comunicación entre contenedores' (11001)
-2024-10-05 10:44:54,530 - INFO - 127.0.0.1 - - [05/Oct/2024 10:44:54] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 10:49:31,711 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\tests\\test_controllers.py', reloading
-2024-10-05 10:49:31,765 - INFO -  * Restarting with stat
-2024-10-05 10:49:32,694 - WARNING -  * Debugger is active!
-2024-10-05 10:49:32,702 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 10:49:33,724 - INFO -  * Detected change in 'C:\\Users\\gaby9\\Documents\\GitHub\\API_Wrapper_Dogs\\tests\\test_controllers.py', reloading
-2024-10-05 10:49:33,766 - INFO -  * Restarting with stat
-2024-10-05 10:49:34,673 - WARNING -  * Debugger is active!
-2024-10-05 10:49:34,681 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 11:10:00,444 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-10-05 11:10:00,444 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 11:10:00,446 - INFO -  * Restarting with stat
-2024-10-05 11:10:01,048 - WARNING -  * Debugger is active!
-2024-10-05 11:10:01,053 - INFO -  * Debugger PIN: 744-471-768
-2024-10-05 11:10:10,788 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg, 200
-2024-10-05 11:10:10,791 - INFO - 127.0.0.1 - - [05/Oct/2024 11:10:10] "GET /dog/breed/pitbull HTTP/1.1" 200 -
-2024-10-05 19:02:15,062 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-10-05 19:02:15,063 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:02:15,064 - INFO -  * Restarting with stat
-2024-10-05 19:02:15,369 - WARNING -  * Debugger is active!
-2024-10-05 19:02:15,371 - INFO -  * Debugger PIN: 882-835-293
-2024-10-05 19:15:12,959 - INFO -  * Detected change in '/app/app.py', reloading
-2024-10-05 19:15:12,995 - INFO -  * Restarting with stat
-2024-10-05 19:15:13,323 - WARNING -  * Debugger is active!
-2024-10-05 19:15:13,325 - INFO -  * Debugger PIN: 882-835-293
-2024-10-05 19:15:15,492 - INFO -  * Detected change in '/app/app.py', reloading
-2024-10-05 19:15:15,522 - INFO -  * Restarting with stat
-2024-10-05 19:15:15,838 - WARNING -  * Debugger is active!
-2024-10-05 19:15:15,840 - INFO -  * Debugger PIN: 882-835-293
-2024-10-05 19:18:12,999 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.3:5000
+2024-10-07 00:33:24,015 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 00:33:24,017 - INFO -  * Restarting with stat
+2024-10-07 00:33:24,283 - WARNING -  * Debugger is active!
+2024-10-07 00:33:24,286 - INFO -  * Debugger PIN: 124-395-763
+2024-10-07 00:37:23,260 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11130.jpg, 200
+2024-10-07 00:37:23,265 - INFO - 192.168.32.1 - - [07/Oct/2024 00:37:23] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:41:41,936 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://172.19.0.3:5000
-2024-10-05 19:18:13,001 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:18:13,003 - INFO -  * Restarting with stat
-2024-10-05 19:18:13,271 - WARNING -  * Debugger is active!
-2024-10-05 19:18:13,272 - INFO -  * Debugger PIN: 143-825-408
-2024-10-05 19:18:24,770 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (99)
-2024-10-05 19:18:24,811 - INFO - 172.19.0.1 - - [05/Oct/2024 19:18:24] "[35m[1mGET /dog/breed/pitbull HTTP/1.1[0m" 500 -
-2024-10-05 19:22:15,626 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-06 18:41:41,938 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 18:41:41,940 - INFO -  * Restarting with stat
+2024-10-06 18:41:42,329 - WARNING -  * Debugger is active!
+2024-10-06 18:41:42,330 - INFO -  * Debugger PIN: 142-852-507
+2024-10-06 18:42:06,368 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10362.jpg, 200
+2024-10-06 18:42:06,370 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:06] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:42:53,441 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190710_143021.jpg, 200
+2024-10-06 18:42:53,443 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:53] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 18:42:56,983 - WARNING - Breed 'pitbul' not found (404)
+2024-10-06 18:42:56,985 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:56] "[33mGET /dog/breed/pitbul HTTP/1.1[0m" 404 -
+2024-10-06 18:43:04,602 - WARNING - Breed 'poddle' not found (404)
+2024-10-06 18:43:04,605 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:04] "[33mGET /dog/breed/poddle HTTP/1.1[0m" 404 -
+2024-10-06 18:43:12,100 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_2726.jpg, 200
+2024-10-06 18:43:12,102 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:12] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-06 18:43:28,335 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:28] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:43:40,430 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:40] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:43:41,812 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:41] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:44:05,112 - INFO - Data inserted: bulldog, https://images.dog.ceo/breeds/bulldog-boston/n02096585_169.jpg, 200
+2024-10-06 18:44:05,115 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:05] "GET /dog/breed/bulldog HTTP/1.1" 200 -
+2024-10-06 18:44:13,575 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/daschund-1.jpg, 200
+2024-10-06 18:44:13,578 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:13] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
+2024-10-06 18:44:37,352 - INFO - Data inserted: husky, https://images.dog.ceo/breeds/husky/n02110185_7594.jpg, 200
+2024-10-06 18:44:37,355 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:37] "GET /dog/breed/husky HTTP/1.1" 200 -
+2024-10-06 18:47:01,115 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c6c53dc0>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:01,127 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:01] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:05,895 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c5c1f340>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:05,898 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:05] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:07,278 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c6cc9e80>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:07,282 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:07] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:50,888 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16519.jpg, 200
+2024-10-06 18:47:50,891 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:50] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:55:53,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.70:5000
+2024-10-06 18:55:53,443 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 18:55:53,445 - INFO -  * Restarting with stat
+2024-10-06 18:55:53,953 - WARNING -  * Debugger is active!
+2024-10-06 18:55:53,960 - INFO -  * Debugger PIN: 744-471-768
+2024-10-06 19:21:57,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.70:5000
+2024-10-06 19:21:57,857 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 19:21:57,859 - INFO -  * Restarting with stat
+2024-10-06 19:21:58,363 - WARNING -  * Debugger is active!
+2024-10-06 19:21:58,368 - INFO -  * Debugger PIN: 493-282-031
+2024-10-06 19:22:34,598 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14702.jpg, 200
+2024-10-06 19:22:34,600 - INFO - 127.0.0.1 - - [06/Oct/2024 19:22:34] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 20:08:32,743 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000
+2024-10-06 20:08:32,749 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 20:08:32,754 - INFO -  * Restarting with stat
+2024-10-06 20:08:33,187 - WARNING -  * Debugger is active!
+2024-10-06 20:08:33,229 - INFO -  * Debugger PIN: 644-045-887
+2024-10-06 20:08:45,906 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (99)
+2024-10-06 20:08:45,918 - INFO - 172.19.0.1 - - [06/Oct/2024 20:08:45] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 20:10:28,251 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://172.20.0.3:5000
-2024-10-05 19:22:15,627 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:22:15,629 - INFO -  * Restarting with stat
-2024-10-05 19:22:15,889 - WARNING -  * Debugger is active!
-2024-10-05 19:22:15,890 - INFO -  * Debugger PIN: 117-137-461
-2024-10-05 19:22:22,748 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg, 200
-2024-10-05 19:22:22,758 - INFO - 172.20.0.1 - - [05/Oct/2024 19:22:22] "GET /dog/breed/pitbull HTTP/1.1" 200 -
-2024-10-05 19:24:27,129 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_17406.jpg, 200
-2024-10-05 19:24:27,133 - INFO - 172.20.0.1 - - [05/Oct/2024 19:24:27] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 19:34:51,719 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.21.0.4:5000
-2024-10-05 19:34:51,720 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:34:51,722 - INFO -  * Restarting with stat
-2024-10-05 19:34:52,075 - WARNING -  * Debugger is active!
-2024-10-05 19:34:52,075 - INFO -  * Debugger PIN: 257-793-617
-2024-10-05 19:41:51,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.23.0.4:5000
-2024-10-05 19:41:51,618 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:41:51,620 - INFO -  * Restarting with stat
-2024-10-05 19:41:51,982 - WARNING -  * Debugger is active!
-2024-10-05 19:41:51,984 - INFO -  * Debugger PIN: 119-482-329
-2024-10-05 19:44:25,299 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.24.0.3:5000
-2024-10-05 19:44:25,300 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:44:25,302 - INFO -  * Restarting with stat
-2024-10-05 19:44:25,620 - WARNING -  * Debugger is active!
-2024-10-05 19:44:25,621 - INFO -  * Debugger PIN: 132-592-254
-2024-10-05 19:52:31,317 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.25.0.3:5000
-2024-10-05 19:52:31,318 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:52:31,319 - INFO -  * Restarting with stat
-2024-10-05 19:52:31,604 - WARNING -  * Debugger is active!
-2024-10-05 19:52:31,605 - INFO -  * Debugger PIN: 198-183-620
-2024-10-05 19:56:15,459 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.26.0.3:5000
-2024-10-05 19:56:15,500 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 19:56:15,501 - INFO -  * Restarting with stat
-2024-10-05 19:56:15,809 - WARNING -  * Debugger is active!
-2024-10-05 19:56:15,811 - INFO -  * Debugger PIN: 394-784-153
-2024-10-05 19:59:33,892 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_13028.jpg, 200
-2024-10-05 19:59:33,895 - INFO - 172.26.0.1 - - [05/Oct/2024 19:59:33] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 20:06:43,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.26.0.4:5000
-2024-10-05 20:06:43,019 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:06:43,021 - INFO -  * Restarting with stat
-2024-10-05 20:06:43,330 - WARNING -  * Debugger is active!
-2024-10-05 20:06:43,332 - INFO -  * Debugger PIN: 104-586-469
-2024-10-05 20:07:07,681 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.26.0.4:5000
-2024-10-05 20:07:07,681 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:07:07,682 - INFO -  * Restarting with stat
-2024-10-05 20:07:07,966 - WARNING -  * Debugger is active!
-2024-10-05 20:07:07,967 - INFO -  * Debugger PIN: 104-586-469
-2024-10-05 20:07:52,765 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.27.0.3:5000
-2024-10-05 20:07:52,766 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:07:52,769 - INFO -  * Restarting with stat
-2024-10-05 20:07:53,073 - WARNING -  * Debugger is active!
-2024-10-05 20:07:53,074 - INFO -  * Debugger PIN: 109-955-248
-2024-10-05 20:10:38,487 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_13050.jpg, 200
-2024-10-05 20:10:38,490 - INFO - 172.27.0.1 - - [05/Oct/2024 20:10:38] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 20:40:46,246 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.28.0.3:5000
-2024-10-05 20:40:46,248 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:40:46,252 - INFO -  * Restarting with stat
-2024-10-05 20:40:46,561 - WARNING -  * Debugger is active!
-2024-10-05 20:40:46,563 - INFO -  * Debugger PIN: 130-373-802
-2024-10-05 20:45:23,303 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11147.jpg, 200
-2024-10-05 20:45:23,307 - INFO - 172.28.0.1 - - [05/Oct/2024 20:45:23] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 20:47:02,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.29.0.4:5000
-2024-10-05 20:47:02,881 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:47:02,882 - INFO -  * Restarting with stat
-2024-10-05 20:47:03,488 - WARNING -  * Debugger is active!
-2024-10-05 20:47:03,495 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:48:07,426 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'db:3306' (111)
-2024-10-05 20:48:07,441 - INFO - 172.29.0.1 - - [05/Oct/2024 20:48:07] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
-2024-10-05 20:48:09,571 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'db:3306' (111)
-2024-10-05 20:48:09,577 - INFO - 172.29.0.1 - - [05/Oct/2024 20:48:09] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
-2024-10-05 20:49:06,762 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11836.jpg, 200
-2024-10-05 20:49:06,766 - INFO - 172.29.0.1 - - [05/Oct/2024 20:49:06] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 20:50:43,330 - INFO -  * Detected change in '/app/controllers.py', reloading
-2024-10-05 20:50:43,361 - INFO -  * Restarting with stat
-2024-10-05 20:50:43,696 - WARNING -  * Debugger is active!
-2024-10-05 20:50:43,698 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:52:37,493 - INFO -  * Detected change in '/app/controllers.py', reloading
-2024-10-05 20:52:37,521 - INFO -  * Restarting with stat
-2024-10-05 20:52:37,883 - WARNING -  * Debugger is active!
-2024-10-05 20:52:37,884 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:53:06,191 - INFO -  * Detected change in '/app/controllers.py', reloading
-2024-10-05 20:53:06,220 - INFO -  * Restarting with stat
-2024-10-05 20:53:06,540 - WARNING -  * Debugger is active!
-2024-10-05 20:53:06,542 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:53:18,983 - INFO -  * Detected change in '/app/controllers.py', reloading
-2024-10-05 20:53:19,009 - INFO -  * Restarting with stat
-2024-10-05 20:53:19,831 - WARNING -  * Debugger is active!
-2024-10-05 20:53:19,837 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:53:51,105 - INFO -  * Detected change in '/app/tests/test_controllers.py', reloading
-2024-10-05 20:53:51,137 - INFO -  * Restarting with stat
-2024-10-05 20:53:51,442 - WARNING -  * Debugger is active!
-2024-10-05 20:53:51,445 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:53:52,567 - INFO -  * Detected change in '/app/tests/test_controllers.py', reloading
-2024-10-05 20:53:52,591 - INFO -  * Restarting with stat
-2024-10-05 20:53:52,902 - WARNING -  * Debugger is active!
-2024-10-05 20:53:52,904 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:53:56,185 - INFO -  * Detected change in '/app/controllers.py', reloading
-2024-10-05 20:53:56,228 - INFO -  * Restarting with stat
-2024-10-05 20:53:56,715 - WARNING -  * Debugger is active!
-2024-10-05 20:53:56,719 - INFO -  * Debugger PIN: 213-904-271
-2024-10-05 20:54:24,886 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.30.0.4:5000
-2024-10-05 20:54:24,887 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 20:54:24,889 - INFO -  * Restarting with stat
-2024-10-05 20:54:25,394 - WARNING -  * Debugger is active!
-2024-10-05 20:54:25,395 - INFO -  * Debugger PIN: 987-506-659
-2024-10-05 20:58:09,085 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/1271553739_Milo.jpg, 200
-2024-10-05 20:58:09,088 - INFO - 172.30.0.1 - - [05/Oct/2024 20:58:09] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 21:01:07,523 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.31.0.4:5000
-2024-10-05 21:01:07,523 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 21:03:47,828 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.4:5000
-2024-10-05 21:03:47,829 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 21:06:04,546 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16502.jpg, 200
-2024-10-05 21:06:04,549 - INFO - 192.168.0.1 - - [05/Oct/2024 21:06:04] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 21:06:06,577 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_5147.jpg, 200
-2024-10-05 21:06:06,580 - INFO - 192.168.0.1 - - [05/Oct/2024 21:06:06] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 21:10:36,023 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.16.3:5000
-2024-10-05 21:10:36,025 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 21:12:25,802 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.32.3:5000
-2024-10-05 21:12:25,805 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-05 21:13:58,881 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14702.jpg, 200
-2024-10-05 21:13:58,885 - INFO - 192.168.32.1 - - [05/Oct/2024 21:13:58] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 21:17:56,165 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14095.jpg, 200
-2024-10-05 21:17:56,169 - INFO - 192.168.32.1 - - [05/Oct/2024 21:17:56] "GET /dog/breed/beagle HTTP/1.1" 200 -
-2024-10-05 21:51:56,028 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.32.3:5000
-2024-10-05 21:51:56,029 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 20:10:28,253 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 20:10:28,254 - INFO -  * Restarting with stat
+2024-10-06 20:10:28,637 - WARNING -  * Debugger is active!
+2024-10-06 20:10:28,638 - INFO -  * Debugger PIN: 888-567-882
+2024-10-06 20:10:43,997 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'db:3306' (111)
+2024-10-06 20:10:44,036 - INFO - 172.20.0.1 - - [06/Oct/2024 20:10:44] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 20:11:21,783 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_1128.jpg, 200
+2024-10-06 20:11:21,787 - INFO - 172.20.0.1 - - [06/Oct/2024 20:11:21] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 20:11:58,727 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg, 200
+2024-10-06 20:11:58,730 - INFO - 172.20.0.1 - - [06/Oct/2024 20:11:58] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:00,855 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg, 200
+2024-10-06 20:12:00,880 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:00] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:03,570 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/IMG_20190826_121528_876.jpg, 200
+2024-10-06 20:12:03,583 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:03] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:05,491 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/dog-3981033_1280.jpg, 200
+2024-10-06 20:12:05,495 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:05] "GET /dog/breed/pitbull HTTP/1.1" 200 -

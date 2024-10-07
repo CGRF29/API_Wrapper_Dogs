@@ -11,13 +11,13 @@ services:
     volumes:
       - .:/app  # Montar el directorio de trabajo
       - /etc/localtime:/etc/localtime:ro  # Montar el archivo de zona horaria del host
-      - /etc/timezone:/etc/timezone:ro    # Montar el archivo de zona horaria del host
     environment:
-      - MYSQL_HOST=${MYSQL_HOST}
+      - TZ=America/Mexico_City
+      - MYSQL_HOST=db
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}  # Cambia esto por una contraseña segura
       - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_TEST_DATABASE=${MYSQL_DATABASE_TEST}
+      #- MYSQL_TEST_DATABASE=${MYSQL_DATABASE_TEST}
     depends_on:
       - db
     #command: flask run --host=0.0.0.0  # Comando para ejecutar la app Flask
@@ -29,7 +29,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}  # Cambia esto por una contraseña segura
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql  # Persistir datos de la base de datos
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Montar el script de inicialización
