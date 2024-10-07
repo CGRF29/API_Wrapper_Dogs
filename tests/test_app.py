@@ -4,6 +4,16 @@ from app import app
 import requests
 import logging
 from unittest.mock import patch
+from app import setup_logging
+
+@pytest.fixture(scope='session', autouse=True)
+def configure_logging():
+    """
+    Descripción:
+    Configura el sistema de logging para las pruebas.
+        - Utiliza la función 'setup_logging' para establecer la configuración de logs que se utilizarán durante la ejecución de las pruebas.
+    """
+    setup_logging(testing=True)
 
 @pytest.fixture
 def client():

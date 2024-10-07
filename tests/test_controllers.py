@@ -8,19 +8,12 @@ from app import setup_logging
 from controllers import insert_request_data, get_db_config
 from unittest.mock import patch
 
-@pytest.fixture(scope='session', autouse=True)
-def configure_logging():
-    """
-    Descripción:
-    Configura el sistema de logging para las pruebas.
-        - Utiliza la función 'setup_logging' para establecer la configuración de logs que se utilizarán durante la ejecución de las pruebas.
-    """
-    setup_logging(testing=True)
-
 # Configurar el entorno de pruebas antes de ejecutar las pruebas
 @pytest.fixture(scope='session', autouse=True)
 def set_test_env():
     os.environ['PYTHON_ENV'] = 'test'  # Configurar el entorno de pruebas
+    setup_logging(testing=True)
+
 
 # Fixture para configurar y limpiar la base de datos antes de cada prueba
 @pytest.fixture(scope='function')
@@ -51,8 +44,8 @@ def setup_database():
     """)
 
     # Limpiar la tabla antes de cada prueba
-    cursor.execute("DELETE FROM requests")
-    conn.commit()
+    #cursor.execute("DELETE FROM requests")
+    #conn.commit()
 
     # Devolver la conexión y el cursor para usarlos en las pruebas
     yield cursor
