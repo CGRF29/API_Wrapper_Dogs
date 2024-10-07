@@ -1,0 +1,93 @@
+2024-10-07 00:33:24,006 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.32.3:5000
+2024-10-07 00:33:24,015 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 00:33:24,017 - INFO -  * Restarting with stat
+2024-10-07 00:33:24,283 - WARNING -  * Debugger is active!
+2024-10-07 00:33:24,286 - INFO -  * Debugger PIN: 124-395-763
+2024-10-07 00:37:23,260 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11130.jpg, 200
+2024-10-07 00:37:23,265 - INFO - 192.168.32.1 - - [07/Oct/2024 00:37:23] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:41:41,936 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000
+2024-10-06 18:41:41,938 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 18:41:41,940 - INFO -  * Restarting with stat
+2024-10-06 18:41:42,329 - WARNING -  * Debugger is active!
+2024-10-06 18:41:42,330 - INFO -  * Debugger PIN: 142-852-507
+2024-10-06 18:42:06,368 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10362.jpg, 200
+2024-10-06 18:42:06,370 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:06] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:42:53,441 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190710_143021.jpg, 200
+2024-10-06 18:42:53,443 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:53] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 18:42:56,983 - WARNING - Breed 'pitbul' not found (404)
+2024-10-06 18:42:56,985 - INFO - 172.19.0.1 - - [06/Oct/2024 18:42:56] "[33mGET /dog/breed/pitbul HTTP/1.1[0m" 404 -
+2024-10-06 18:43:04,602 - WARNING - Breed 'poddle' not found (404)
+2024-10-06 18:43:04,605 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:04] "[33mGET /dog/breed/poddle HTTP/1.1[0m" 404 -
+2024-10-06 18:43:12,100 - INFO - Data inserted: poodle, https://images.dog.ceo/breeds/poodle-miniature/n02113712_2726.jpg, 200
+2024-10-06 18:43:12,102 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:12] "GET /dog/breed/poodle HTTP/1.1" 200 -
+2024-10-06 18:43:28,335 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:28] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:43:40,430 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:40] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:43:41,812 - INFO - 172.19.0.1 - - [06/Oct/2024 18:43:41] "[31m[1mPOST /dog/breed/poodle HTTP/1.1[0m" 405 -
+2024-10-06 18:44:05,112 - INFO - Data inserted: bulldog, https://images.dog.ceo/breeds/bulldog-boston/n02096585_169.jpg, 200
+2024-10-06 18:44:05,115 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:05] "GET /dog/breed/bulldog HTTP/1.1" 200 -
+2024-10-06 18:44:13,575 - INFO - Data inserted: Dachshund, https://images.dog.ceo/breeds/dachshund/daschund-1.jpg, 200
+2024-10-06 18:44:13,578 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:13] "GET /dog/breed/Dachshund HTTP/1.1" 200 -
+2024-10-06 18:44:37,352 - INFO - Data inserted: husky, https://images.dog.ceo/breeds/husky/n02110185_7594.jpg, 200
+2024-10-06 18:44:37,355 - INFO - 172.19.0.1 - - [06/Oct/2024 18:44:37] "GET /dog/breed/husky HTTP/1.1" 200 -
+2024-10-06 18:47:01,115 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c6c53dc0>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:01,127 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:01] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:05,895 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c5c1f340>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:05,898 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:05] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:07,278 - ERROR - Error connecting to Dog CEO API: HTTPSConnectionPool(host='dog.ceo', port=443): Max retries exceeded with url: /api/breed/beagle/images/random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51c6cc9e80>: Failed to resolve 'dog.ceo' ([Errno -2] Name or service not known)"))
+2024-10-06 18:47:07,282 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:07] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 18:47:50,888 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16519.jpg, 200
+2024-10-06 18:47:50,891 - INFO - 172.19.0.1 - - [06/Oct/2024 18:47:50] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 18:55:53,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.70:5000
+2024-10-06 18:55:53,443 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 18:55:53,445 - INFO -  * Restarting with stat
+2024-10-06 18:55:53,953 - WARNING -  * Debugger is active!
+2024-10-06 18:55:53,960 - INFO -  * Debugger PIN: 744-471-768
+2024-10-06 19:21:57,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.70:5000
+2024-10-06 19:21:57,857 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 19:21:57,859 - INFO -  * Restarting with stat
+2024-10-06 19:21:58,363 - WARNING -  * Debugger is active!
+2024-10-06 19:21:58,368 - INFO -  * Debugger PIN: 493-282-031
+2024-10-06 19:22:34,598 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14702.jpg, 200
+2024-10-06 19:22:34,600 - INFO - 127.0.0.1 - - [06/Oct/2024 19:22:34] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 20:08:32,743 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000
+2024-10-06 20:08:32,749 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 20:08:32,754 - INFO -  * Restarting with stat
+2024-10-06 20:08:33,187 - WARNING -  * Debugger is active!
+2024-10-06 20:08:33,229 - INFO -  * Debugger PIN: 644-045-887
+2024-10-06 20:08:45,906 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (99)
+2024-10-06 20:08:45,918 - INFO - 172.19.0.1 - - [06/Oct/2024 20:08:45] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 20:10:28,251 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.3:5000
+2024-10-06 20:10:28,253 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 20:10:28,254 - INFO -  * Restarting with stat
+2024-10-06 20:10:28,637 - WARNING -  * Debugger is active!
+2024-10-06 20:10:28,638 - INFO -  * Debugger PIN: 888-567-882
+2024-10-06 20:10:43,997 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'db:3306' (111)
+2024-10-06 20:10:44,036 - INFO - 172.20.0.1 - - [06/Oct/2024 20:10:44] "[35m[1mGET /dog/breed/beagle HTTP/1.1[0m" 500 -
+2024-10-06 20:11:21,783 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_1128.jpg, 200
+2024-10-06 20:11:21,787 - INFO - 172.20.0.1 - - [06/Oct/2024 20:11:21] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 20:11:58,727 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg, 200
+2024-10-06 20:11:58,730 - INFO - 172.20.0.1 - - [06/Oct/2024 20:11:58] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:00,855 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/20190801_154956.jpg, 200
+2024-10-06 20:12:00,880 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:00] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:03,570 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/IMG_20190826_121528_876.jpg, 200
+2024-10-06 20:12:03,583 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:03] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 20:12:05,491 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/dog-3981033_1280.jpg, 200
+2024-10-06 20:12:05,495 - INFO - 172.20.0.1 - - [06/Oct/2024 20:12:05] "GET /dog/breed/pitbull HTTP/1.1" 200 -
