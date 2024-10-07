@@ -44,8 +44,8 @@ def setup_database():
     """)
 
     # Limpiar la tabla antes de cada prueba
-    #cursor.execute("DELETE FROM requests")
-    #conn.commit()
+    cursor.execute("DELETE FROM requests")
+    conn.commit()
 
     # Devolver la conexión y el cursor para usarlos en las pruebas
     yield cursor
