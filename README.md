@@ -1,179 +1,179 @@
 # API_Wrapper_Dogs 🐶
 
-## 📌 Descripción
+## 📌 Description
 
-Este proyecto es una API wrapper que actúa como intermediario entre los usuarios y la API Dog CEO. Su propósito es proporcionar un control adicional, como el registro de logs y almacenamiento de solicitudes en una base de datos MySQL. Los usuarios pueden solicitar imágenes aleatorias de razas de perros, y la información se guarda en la base de datos para su análisis futuro.
+This project is an API wrapper that acts as an intermediary between users and the Dog CEO API. Its purpose is to provide additional control, such as logging and storing requests in a MySQL database. Users can request random images of dog breeds, and the information is stored in the database for future analysis.
 
 > [!NOTE]
-> Este proyecto incluye manejo de errores y pruebas unitarias usando pytest, y está diseñado para ejecutarse localmente, sin docker-compose.
+> This project includes error handling and unit testing using pytest, and is designed to run locally, without docker-compose.
 
 
-## 📌 Archivos del Proyecto
+## 📌  Project Files
 
 `requirements.txt`
 
-El archivo contiene una lista de las dependencias de Python que la aplicación necesita para funcionar correctamente. 
+The file contains a list of Python dependencies that the application needs to function properly.
 
 `init.sql`
 
-Contiene el script SQL que se ejecuta cuando se inicializa el contenedor de MySQL. Este script se utiliza para configurar la base de datos de la aplicación, por ejemplo, creando tablas necesarias, usuarios, o configuraciones iniciales.
+Contains the SQL script that is executed when the MySQL container is initialized when using docker-compose. This script is used to configure the application database, for example, creating required tables, users, or initial configurations.
 
 `Dockerfile`
 
-Contiene instrucciones para construir una imagen de Docker. Define cómo se debe construir y configurar el entorno para ejecutar la aplicación Flask. Este archivo permite que la aplicación sea replicada en cualquier entorno de manera consistente.
+It contains instructions for building a Docker image, defining how to build and configure the environment to run the Flask application. This file allows the application to be replicated in any environment in a consistent manner.
 
 `docker-compose.yml`
 
-Define los servicios necesarios para ejecutar la aplicación en contenedores separados y cómo interactúan entre sí. Permite ejecutar múltiples servicios de Docker, como la aplicación Flask y la base de datos MySQL, de forma conjunta con un solo comando.
+Defines the services required to run the application in separate containers and how they interact with each other. Allows multiple Docker services, such as the Flask application and MySQL database, to run together with a single command.
 
 `app.py`
 
-Contiene la lógica principal de la API Flask. Aquí se define el endpoint /dog/breed/<breed_name>, que se conecta a la API de Dog CEO para obtener imágenes de razas de perros. El archivo maneja las respuestas, registra errores y almacena los resultados en la base de datos MySQL.
+It contains the main logic of the Flask API. The endpoint /dog/breed/<breed_name>  is defined here, which connects to the Dog CEO API to get images of dog breeds. The file handles responses, logs errors and stores the results in the MySQL database.
 
 `controllers.py`
 
-Define las funciones relacionadas con la base de datos, como la configuración de la conexión y la inserción de datos. Contiene la lógica para insertar en la tabla requests, en donde se almacena la raza de perro solicitada, la URL de la imagen, la marca de tiempo y el código de respuesta de la API.
+Defines database-related functions, such as connection setup and data insertion. It contains the logic for inserting into the requests table, where the requested dog breed, the image URL, the timestamp and the API response code are stored.
 
 `logging_config.py`
 
-Configura el sistema de registro de la aplicación. Los errores y la información de las solicitudes se registran en los archivos info.log, error.log y info_test.log, respectivamente. El sistema de logging está configurado por niveles (INFO, ERROR) para separar la información general de los errores, y se rota automáticamente en función del tiempo. Esto se logra mediante intervalos de tiempo definidos (parámetros when y backupCount), lo que garantiza que los archivos de log se guarden y archiven de manera eficiente.
+Configures the application logging system. Errors and request information are logged in info.log, error.log and info_test.log files, respectively. The logging system is configured by levels (INFO, ERROR) to separate general information from errors, and is automatically rotated according to time. This is achieved by defined time intervals (when and backupCount parameters), which ensures that log files are saved and archived efficiently.
 
 📁 tests
 
 `test_app.py`
 
-Incluye las pruebas unitarias para el archivo app.py. Se usan mocks para simular respuestas de la API Dog CEO, validando diferentes escenarios como éxitos, errores de conexión, razas no válidas y tiempos de espera.
+It includes unit tests for the app.py file. Mocks are used to simulate Dog CEO API responses, validating different scenarios such as successes, connection errors, invalid races and timeouts.
 
 `test_controllers.py`
 
-Este archivo contiene las pruebas para las funciones de controllers.py, especialmente el manejo de la base de datos. Valida que los datos se guarden correctamente en la base de datos y que se manejen los errores de conexión.
+This file contains the tests for the controllers.py functions, especially the database handling. It validates that data is correctly stored in the database and that connection errors are handled.
 
-## 📌 Instalación sin docker-compose
+## 📌 Installation without docker-compose
 
-Configurar la base de datos MySQL:
-- Asegurarse de tener Docker instalado
-- Ejecuta el siguiente comando para crear y ejecutar el contenedor MySQL:
+Configure the MySQL database:
+- Ensure That you have Docker installed
+- Run the following command to create and run the MySQL container:
 ```
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=dog_api -p 3306:3306 -d mysql:latest
 ```
-- Asegurarse que los detalles de conexión en controllers.py estén correctos.
+- Ensure that the connection details in controllers.py are correct.
 
-Instalación de las dependencias:
+Installation of the dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-## 📌 Uso
+## 📌 Use
 
-Para ejecutar la aplicación, usa el siguiente comando:
+To run the application, use the following command:
 ```
 python app.py
 ```
 
-Puedes probar el endpoint utilizando:
+Test the endpoint using:
 HTML
-- Ingresa la URL: 
+- Enter the URL: 
 ```
 http://localhost:5000/dog/breed/<type_breed>
 ```
 
 Postman
-- Crea una nueva solicitud GET
-- Ingresa la URL: 
+- Create a new GET request
+- Enter the URL: 
 ```
 http://localhost:5000/dog/breed/<type_breed>
 ```
-- Haz clic en "Enviar" y observa la respuesta
+- Click on “Send” and watch the response
 
-## 📌 Uso con Docker-Compose
+## 📌 Use with Docker-Compose
 
 > [!NOTE]
-> Asegurarse de tener instalado Docker
+> Make sure you have Docker installed
 
-Pasos para ejecutar aplicación:
+Steps to execute the application:
 
-1.	Clonar el repositorio del proyecto:
+1.	Clone the project repository:
 ```
 git clone https://tu-repositorio.git
 cd nombre-del-directorio
 ```
-2.	(Opcional) Modificar la configuración:
--	Modificar las credenciales MySQL: Puedes cambiar las credenciales y el nombre de la base de datos en el archivo .env en las variables de entorno
--	Logs: Puedes personalizar la configuración en el archivo logging_config.py para ajustar la rotación automática de logs en función del tiempo, modificando los parámetros como when (intervalo de tiempo) y backupCount (número de archivos de respaldo).
 
-3.	Construir y levanta los contenedores
-Navega al directorio donde está tu archivo docker-compose.yml y ejecuta:
+2.	(Optional) Modify the configuration:
+-	Modify MySQL credentials: You can change the credentials and the database name in the .env file in the environment variables.
+-	Logs: You can customize the configuration in the logging_config.py file to adjust the automatic rotation of logs according to time by modifying parameters such as when (time interval) and backupCount (number of backup files).
+
+3.	Build and lift containers
+Navigate to the directory where your docker-compose.yml file is located and run:
 ```
 docker-compose up –build
 ```
-Los contenedores estarán listos para usarse cuando veas algo similar a:
+The containers will be ready for use when you see something similar to:
 ```
 flask_app   |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ```
 
-4.	Acceder a la aplicación:
-Una vez que los contenedores estén corriendo, puedes acceder a la API Flask en tu navegador o usando herramientas como Postman .
+4.	Access the application:
+Once the containers are running, you can access the Flask API in your browser or by using tools such as Postman 
 - HTML
-Ingresa la URL 
+Enter the URL 
 ```
 http://localhost:5000/dog/breed/<type_breed>
 ```
 - Postman
-1. Crea una nueva solicitud GET
-2. Ingresa la URL: 
+1. Create a new GET request
+2. Enter the URL: 
 ```
 http://localhost:5000/dog/breed/<type_breed>
 ```
-3. Haz clic en "Enviar" y observa la respuesta
+3. Click on “Send” and watch the response
 
-
-5.	Detener la aplicación:
-Si deseas detener los contenedores, simplemente presiona CTRL + C en la terminal donde ejecutaste docker-compose up. Para detener y eliminar todos los contenedores y redes asociadas, ejecuta:
+5.	Stop the application:
+If you want to stop the containers, simply press CTRL + C in the terminal where you ran docker-compose up. To stop and remove all containers and associated networks, run:
 ```
 docker-compose down
 ```
 
-## 📌 Pruebas
-Este proyecto incluye varias pruebas unitarias diseñadas para asegurar la funcionalidad y robustez de la API. Se utilizan herramientas como pytest y pytest-cov para ejecutar las pruebas y medir la cobertura del código.
+## 📌 Tests
+This project includes several unit tests designed to ensure the functionality and robustness of the API. Tools such as pytest and pytest-cov are used to run the tests and measure code coverage.
 
-1. Puntos clave considerados:
-    `Cobertura de Funcionalidades Clave:` Se aseguraron de probar todas las funcionalidades críticas de la API, incluyendo los endpoints y la interacción con la base de datos.
+1. Key points considered:   
 
-    `Manejo de Errores:` Se implementaron pruebas para manejar situaciones de error, como solicitudes inválidas a la API y fallos de conexión a la base de datos. Esto incluye verificar que los mensajes de error se registren correctamente en los logs.
-    
-    `Pruebas de Excepciones:` Se usaron técnicas de simulación (mocking) para simular errores en las dependencias externas, como la API externa y la base de datos, asegurando que se manejen adecuadamente.
-    
-    `Validación de Respuestas:` Las pruebas validan no solo el código de estado de la respuesta, sino también el contenido de la respuesta JSON para asegurarse de que los datos devueltos sean correctos.
-    
-    `Registro de Logs:` Se verificó que los errores se registraran adecuadamente en los archivos de log, lo que ayuda en la depuración y monitoreo del sistema.
-    
-    `Uso de Herramientas de Prueba:` Se utilizó pytest para facilitar la ejecución y organización de las pruebas, así como pytest-cov para medir la cobertura del código. 
+    `Key Functionality Coverage:` Make sure to test all critical API functionality, including endpoints and database interaction.
 
-2. Uso
-Para ejecutar las pruebas automatizadas:
-- Asegurarse que el contenedor de MySQL esté en ejecución
-- Crear la base de datos 'dog_api_test' en MySQL:
+    ` Error Handling:` Check the implementation to handle error situations, such as invalid API requests and database connection failures. This includes verifying that error messages are correctly recorded in the logs.
+    
+    `Exception Testing:` Mocking techniques use to simulate errors in external dependencies, such as the external API and database, ensuring that they are handled properly
+    
+    ` Response Validation:` The tests validate not only the status code of the response, but also the content of the JSON response to ensure that the data returned is correct.
+    
+    `Logging:` Verify that errors are properly recorded in the log files, which helps in debugging and monitoring the system.
+    
+    `Use of Testing Tools:` Use pytest to facilitate the execution and organization of tests, as well as pytest-cov to measure code coverage.
+
+2. Use
+To run automated tests:
+- Ensure MySQL container is running
+- Create the database 'dog_api_test' in MySQL:
 ```
     CREATE DATABASE dog_api_test;
     USE dog_api_test;
 ```
-Para ejecutar todas las pruebas, utiliza:
+To run all tests, use:
 ```
 coverage run -m pytest tests/ -v -s
 ```
-Para ver el reporte de cobertura:
+To view the coverage report:
 ```
 coverage report -m
 ```
-El proyecto cuenta con un 97% de cobertura de pruebas, lo que indica que la mayoría del código ha sido evaluado a través de pruebas unitarias. 
+The project has 97% test coverage, indicating that the majority of the code has been evaluated through unit testing.
 
-## 📌 Mejoras
+## 📌 Future improvements
 
-Este proyecto puede seguir mejorándose y escalándose con diferentes funcionalidades adicionales. Un ejemplo de mejora sería la implementación de rate limiting en la API Flask para evitar abusos y sobrecargas del servidor, lo cual ayudaría a garantizar un acceso controlado y eficiente a la API, protegiéndola de un uso excesivo o malintencionado.
+This project can be further enhanced and scaled with different additional functionalities. An example of improvement would be the implementation of rate limiting in the Flask API to prevent abuse and server overloads, which would help ensure controlled and efficient access to the API, protecting it from excessive or malicious use.
+Any suggestion to improve or modify the project is welcome.
 
-Cualquier sugerencia para mejorar o modificar en el proyecto es bienvenida. 
-
-## 📌 Bibliografía
+## 📌 Bibliography
 
 What are API Wrappers? [Page](https://apidog.com/blog/what-are-api-wrappers/).
 
@@ -192,6 +192,3 @@ Mastering Python Mock and Patch: Mocking For Unit Testing [Page](https://codefat
 Dockerizing a Flask-MySQL app with docker-compose[Page](https://stavshamir.github.io/python/dockerizing-a-flask-mysql-app-with-docker-compose/).
 
 Dockerizing Flask+MySQL Application Using Compose[Page](https://blog.abbasmj.com/dockerizing-flaskmysql-application-using-compose).
-
-
-
