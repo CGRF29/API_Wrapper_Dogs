@@ -1,5 +1,7 @@
 # API_Wrapper_Dogs 🐶
 
+![API](https://github.com/user-attachments/assets/09bdf1fd-8ee5-45bb-82e0-7d1a48914641)
+
 ## 📌 Description
 
 This project is an API wrapper that acts as an intermediary between users and the Dog CEO API. Its purpose is to provide additional control, such as logging and storing requests in a MySQL database. Users can request random images of dog breeds, and the information is stored in the database for future analysis.
@@ -188,6 +190,8 @@ To view the coverage report:
 coverage report -m
 ```
 The project has 97% test coverage, indicating that the majority of the code has been evaluated through unit testing.
+
+![image](https://github.com/user-attachments/assets/5ddb1d9e-c0a4-45ba-baf6-b943b30b83e4)
 
 ## 📌 Future improvements
 
