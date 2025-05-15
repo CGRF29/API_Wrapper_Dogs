@@ -1,75 +1,40 @@
-2024-10-06 19:21:36,149 - ERROR - Database error: Connection Error
-2024-10-06 19:24:11,341 - ERROR - Database error: Connection Error
-2024-10-06 19:32:03,439 - ERROR - Database error: Connection Error
-2024-10-06 19:46:38,060 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_5716.jpg, 200
-2024-10-06 19:46:38,497 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 19:46:38,502 - ERROR - Timeout error occurred: 
-2024-10-06 19:46:38,506 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 19:46:39,104 - ERROR - Database error: Connection Error
-2024-10-06 19:46:39,104 - ERROR - Database error: Connection Error
-2024-10-06 19:55:35,802 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_16704.jpg, 200
-2024-10-06 19:55:36,276 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 19:55:36,285 - ERROR - Timeout error occurred: 
-2024-10-06 19:55:36,290 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 19:55:36,870 - ERROR - Database error: Connection Error
-2024-10-06 19:55:36,870 - ERROR - Database error: Connection Error
-2024-10-06 20:05:14,802 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_13236.jpg, 200
-2024-10-06 20:05:15,259 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 20:05:15,268 - ERROR - Timeout error occurred: 
-2024-10-06 20:05:15,275 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 20:05:15,890 - ERROR - Database error: Connection Error
-2024-10-06 20:05:15,890 - ERROR - Database error: Connection Error
-2024-10-06 20:06:03,163 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_11130.jpg, 200
-2024-10-06 20:06:03,603 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 20:06:03,610 - ERROR - Timeout error occurred: 
-2024-10-06 20:06:03,618 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 20:06:04,242 - ERROR - Database error: Connection Error
-2024-10-06 20:06:04,242 - ERROR - Database error: Connection Error
-2024-10-06 20:57:34,104 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10798.jpg, 200
-2024-10-06 20:57:34,592 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 20:57:34,599 - ERROR - Timeout error occurred: 
-2024-10-06 20:57:34,602 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 20:57:35,575 - ERROR - Database error: Connection Error
-2024-10-06 20:57:35,575 - ERROR - Database error: Connection Error
-2024-10-06 20:58:59,976 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10354.jpg, 200
-2024-10-06 20:59:00,507 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 20:59:00,518 - ERROR - Timeout error occurred: 
-2024-10-06 20:59:00,528 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 20:59:01,346 - ERROR - Database error: Connection Error
-2024-10-06 20:59:01,346 - ERROR - Database error: Connection Error
-2024-10-06 21:01:09,520 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_2106.jpg, 200
-2024-10-06 21:01:10,048 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:01:10,058 - ERROR - Timeout error occurred: 
-2024-10-06 21:01:10,064 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:01:10,848 - ERROR - Database error: Connection Error
-2024-10-06 21:01:10,848 - ERROR - Database error: Connection Error
-2024-10-06 21:02:58,873 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_15036.jpg, 200
-2024-10-06 21:02:59,272 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:02:59,280 - ERROR - Timeout error occurred: 
-2024-10-06 21:02:59,283 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:03:00,057 - ERROR - Database error: Connection Error
-2024-10-06 21:03:00,057 - ERROR - Database error: Connection Error
-2024-10-06 21:04:33,382 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_13028.jpg, 200
-2024-10-06 21:04:33,816 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:04:33,822 - ERROR - Timeout error occurred: 
-2024-10-06 21:04:33,826 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:04:34,624 - ERROR - Database error: Connection Error
-2024-10-06 21:04:34,624 - ERROR - Database error: Connection Error
-2024-10-06 21:05:59,109 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_14095.jpg, 200
-2024-10-06 21:05:59,632 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:05:59,642 - ERROR - Timeout error occurred: 
-2024-10-06 21:05:59,649 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:06:00,565 - ERROR - Database error: Connection Error
-2024-10-06 21:06:00,565 - ERROR - Database error: Connection Error
-2024-10-06 21:06:14,872 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_2502.jpg, 200
-2024-10-06 21:06:15,410 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:06:15,420 - ERROR - Timeout error occurred: 
-2024-10-06 21:06:15,428 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:06:16,316 - ERROR - Database error: Connection Error
-2024-10-06 21:06:16,316 - ERROR - Database error: Connection Error
-2024-10-06 21:07:16,803 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10108.jpg, 200
-2024-10-06 21:07:17,257 - WARNING - Breed 'invalid_breed' not found (404)
-2024-10-06 21:07:17,269 - ERROR - Timeout error occurred: 
-2024-10-06 21:07:17,276 - ERROR - Error connecting to Dog CEO API: API request failed
-2024-10-06 21:07:18,114 - ERROR - Database error: Connection Error
-2024-10-06 21:07:18,114 - ERROR - Database error: Connection Error
+2024-10-09 13:21:36,105 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2024-10-09 13:21:36,110 - ERROR - Exception on /dog/breed/beagle [GET]
+Traceback (most recent call last):
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 334, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 'localhost:3306' (10061)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\gaby9\Documents\GitHub\API_Wrapper_Dogs\app.py", line 52, in get_dog_image
+    insert_request_data(breed_name, image_url, timestamp,response.status_code)
+  File "C:\Users\gaby9\Documents\GitHub\API_Wrapper_Dogs\controllers.py", line 79, in insert_request_data
+    with mysql.connector.connect(**db_config) as conn:
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 151, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\abstracts.py", line 1399, in connect
+    self._open_connection()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 339, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2024-10-09 13:21:36,586 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-09 13:21:36,592 - ERROR - Timeout error occurred: 
+2024-10-09 13:21:36,596 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-09 13:34:05,765 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_18403.jpg, 200
+2024-10-09 13:34:06,151 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-09 13:34:06,155 - ERROR - Timeout error occurred: 
+2024-10-09 13:34:06,159 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-09 13:34:06,878 - ERROR - Database error: Connection Error
+2024-10-09 13:34:06,878 - ERROR - Database error: Connection Error

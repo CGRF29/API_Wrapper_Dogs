@@ -131,3 +131,17 @@
 2024-10-06 21:06:31,796 - INFO -  * Debugger PIN: 888-567-882
 2024-10-06 21:06:39,380 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_8477.jpg, 200
 2024-10-06 21:06:39,386 - INFO - 172.20.0.1 - - [06/Oct/2024 21:06:39] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 21:23:27,127 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.3:5000
+2024-10-06 21:23:27,129 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-06 21:23:27,132 - INFO -  * Restarting with stat
+2024-10-06 21:23:27,531 - WARNING -  * Debugger is active!
+2024-10-06 21:23:27,532 - INFO -  * Debugger PIN: 888-567-882
+2024-10-06 21:23:45,375 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_2360.jpg, 200
+2024-10-06 21:23:45,379 - INFO - 172.20.0.1 - - [06/Oct/2024 21:23:45] "GET /dog/breed/beagle HTTP/1.1" 200 -
+2024-10-06 21:24:22,950 - INFO - Data inserted: pitbull, https://images.dog.ceo/breeds/pitbull/IMG_20190826_121528_876.jpg, 200
+2024-10-06 21:24:22,954 - INFO - 172.20.0.1 - - [06/Oct/2024 21:24:22] "GET /dog/breed/pitbull HTTP/1.1" 200 -
+2024-10-06 21:24:50,196 - INFO - Data inserted: PITBULL, https://images.dog.ceo/breeds/pitbull/dog-3981033_1280.jpg, 200
+2024-10-06 21:24:50,200 - INFO - 172.20.0.1 - - [06/Oct/2024 21:24:50] "GET /dog/breed/PITBULL HTTP/1.1" 200 -
