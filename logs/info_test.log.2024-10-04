@@ -1,0 +1,30 @@
+2024-10-04 00:38:57,884 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-04 00:38:57,895 - ERROR - Timeout error occurred: 
+2024-10-04 00:38:57,899 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-04 00:38:58,493 - ERROR - Database error: Connection Error
+2024-10-04 00:38:58,493 - ERROR - Database error: Connection Error
+2024-10-04 00:44:43,029 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-04 00:44:43,038 - ERROR - Timeout error occurred: 
+2024-10-04 00:44:43,044 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-04 00:44:43,648 - ERROR - Database error: Connection Error
+2024-10-04 00:44:43,648 - ERROR - Database error: Connection Error
+2024-10-04 00:47:16,593 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_6211.jpg, 200
+2024-10-04 00:47:17,078 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-04 00:47:17,089 - ERROR - Timeout error occurred: 
+2024-10-04 00:47:17,096 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-04 00:47:17,691 - ERROR - Database error: Connection Error
+2024-10-04 00:47:17,691 - ERROR - Database error: Connection Error
+2024-10-04 00:49:10,959 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_5090.jpg, 200
+2024-10-04 00:49:11,454 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-04 00:49:11,464 - ERROR - Timeout error occurred: 
+2024-10-04 00:49:11,471 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-04 00:49:12,053 - ERROR - Database error: Connection Error
+2024-10-04 00:49:12,053 - ERROR - Database error: Connection Error
+2024-10-04 00:50:10,377 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_10798.jpg, 200
+2024-10-04 00:50:10,783 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-04 00:50:10,792 - ERROR - Timeout error occurred: 
+2024-10-04 00:50:10,798 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-04 00:50:11,364 - ERROR - Database error: Connection Error
+2024-10-04 00:50:11,364 - ERROR - Database error: Connection Error
+2024-10-04 00:51:39,697 - ERROR - Database error: Connection Error
+2024-10-04 01:10:54,872 - ERROR - Database error: Connection Error

@@ -1,0 +1,40 @@
+2024-10-09 13:21:36,105 - ERROR - Database error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2024-10-09 13:21:36,110 - ERROR - Exception on /dog/breed/beagle [GET]
+Traceback (most recent call last):
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 334, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 'localhost:3306' (10061)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\gaby9\Documents\GitHub\API_Wrapper_Dogs\app.py", line 52, in get_dog_image
+    insert_request_data(breed_name, image_url, timestamp,response.status_code)
+  File "C:\Users\gaby9\Documents\GitHub\API_Wrapper_Dogs\controllers.py", line 79, in insert_request_data
+    with mysql.connector.connect(**db_config) as conn:
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 151, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\abstracts.py", line 1399, in connect
+    self._open_connection()
+  File "C:\Users\gaby9\anaconda3\envs\API_Wrapper\lib\site-packages\mysql\connector\connection_cext.py", line 339, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2024-10-09 13:21:36,586 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-09 13:21:36,592 - ERROR - Timeout error occurred: 
+2024-10-09 13:21:36,596 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-09 13:34:05,765 - INFO - Data inserted: beagle, https://images.dog.ceo/breeds/beagle/n02088364_18403.jpg, 200
+2024-10-09 13:34:06,151 - WARNING - Breed 'invalid_breed' not found (404)
+2024-10-09 13:34:06,155 - ERROR - Timeout error occurred: 
+2024-10-09 13:34:06,159 - ERROR - Error connecting to Dog CEO API: API request failed
+2024-10-09 13:34:06,878 - ERROR - Database error: Connection Error
+2024-10-09 13:34:06,878 - ERROR - Database error: Connection Error
